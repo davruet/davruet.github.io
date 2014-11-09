@@ -1,9 +1,11 @@
 ---
-layout: post
-title:  "Welcome to Jekyll!"
+layout: project
+title:  "Walk/Talk: ACRE"
 date:   2014-11-08 14:30:56
-image: "acre-coats.jpg"
 categories: jekyll update
+image: acre-walk-3-sq.jpg
+square-thumb: acre-walk-3-sq.jpg
+alt: Lights
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
 
