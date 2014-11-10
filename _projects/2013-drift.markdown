@@ -1,29 +1,22 @@
 ---
 layout: project
 title:  "Drift"
-date:   2014-11-08 14:30:56
+date:   2012-11-08 14:30:56
 categories: jekyll update
-image: launch-sq.jpg
+image: drift-launch-hi.jpg
 square-thumb: launch-sq.jpg
-
-alt: Lights
+medium: two-channel video projection, radio scanner, wood, brass, 8-minute audio narration.
+project-url: http://aeolianroute.com
+alt: Drift
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
+I constructed a custom, solar-powered radio beacon buoy that broadcasted a one-second repeating interval of silence. After releasing the buoy into lake Michigan one windy day, I attempted to trace its path for weeks, travelling hundreds of miles along the shore through four states in search of the signal. Aided by detailed wind and current data provided by NOAA, and a custom drift simulation program that I wrote, I found the signal late one night on a beach in Michigan. But the signal was lost the next day, and amidst mounting uncertainty, I gave up the search.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+![Drift Search](/img/large/drift-search.jpg)
 
-Jekyll also offers powerful support for code snippets:
+![Drift Install](/img/large/drift-install.jpg)
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
 
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+<div class="embed-responsive embed-responsive-16by9">
+<iframe src="//player.vimeo.com/video/79566576" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/79566576">Drift</a> from <a href="http://vimeo.com/user5698774">David Rueter</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+</div>

@@ -3,26 +3,19 @@ layout: project
 title:  "Shenanigans"
 date:   2014-11-08 14:30:56
 categories: jekyll update
-image: shenanigans-sq.jpg
+image: shenanigans.jpg
 square-thumb: shenanigans-sq.jpg
 alt: Shenanigans
+project-url: http://shenanigans.io
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Shenanigans is a community-powered network that disrupts a new and disturbing surveillance technology: WiFi probe request tracking. Bulk surveillance of the movements of individuals is becoming ubiquitous and accessible: anyone with $50 and a bit of programming knowledge can build a monitoring device. Many people are unaware that their smartphones constantly broadcast unique fingerprints, and that surveillance systems are reading and recording these beacons at airports, museums, concerts, malls, main streets, and parks. Throwing a wrench in the works, Shenanigans catalyzes a process of “identity entropy” -- a deliberate erosion of the uniqueness and meaning of WiFi identity markers.
 
-Jekyll also offers powerful support for code snippets:
+Using software on the shenanigans.io website, volunteers can "de-identify" their mobile devices by donating the very same WiFi fingerprint that trackers are attempting to collect. As documentation of their participation, donors receive a "Certificate of De-identification" that's ready for printing. A global network of Shenanigans-enabled mobile WiFi devices, operated by co-conspirators, continually impersonates donors by rebroadcasting collected fingerprints. As more people join in, tracking systems will begin to experience strange anomalies. In WiFi-land, everyone will be everywhere.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+The name "SHENANIGANS" is stolen from a classified NSA/CIA program that used drones to harvest and map the WiFi transmissions of entire cities, in service of the CIA's covert assassination program.
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
 
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+![Cert](/img/large/cert.jpg)
+
+![Bike](/img/large/bike.jpg)

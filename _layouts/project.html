@@ -1,14 +1,27 @@
 ---
 layout: default
 ---
+
 <div class="project">
 
-  <header class="project-header">
-    <h1 class="project-title">{{ page.title }}</h1>
-    <p class="project-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  <header class="post-header">
+    <div class="row">
+        <div class="col-xs-7">
+            <h1 class="post-title">{{ page.title }}</h1>
+        </div>
+        <div class="col-xs-5 project-meta">
+        {% if page.date %}{{ page.date | date: "%Y" }}<br>{% endif %}
+        {% if page.medium %} {{ page.medium }}<br>{% endif %}
+        {% if page.dimensions %} {{ page.dimensions }}<br>{% endif %}
+        {% if page.project-url %}<a href="{{ page.project-url }}">{{page.project-url}}</a><br>{% endif %}
+        {% if page.author %} • {{ page.author }}<br>{% endif %}
+        {% if page.meta %} • {{ page.meta }}{% endif %}<br>
+        </div>
+    </div>
+      
   </header>
 
-  <article class="project-content">
+  <article class="post-content">
     {{ content }}
   </article>
 

@@ -1,4 +1,4 @@
-<header class="site-header">
+<header>
 
    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
        <div class="container">
@@ -14,6 +14,7 @@
        
             <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+                <li><a class="nav-title" href="{{ site.baseurl }}/">Projects</a></li>
                 {% for page in site.pages %}
                 {% if page.title %}
                     <li><a class="nav-title" href="{{page.url}}">{{ page.title }}</a></li>
