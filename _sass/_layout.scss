@@ -34,7 +34,16 @@
    margin-bottom: 20px;
     padding-bottom:5px;
     padding-top:5px;
+  -webkit-transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -o-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
 }
+
+.project-image:hover {
+  opacity: .8;
+}
+
 
 /**
  * Site footer
@@ -209,5 +218,6 @@
     color: $grey-color;
     text-align:right;
 }
+
 
 
