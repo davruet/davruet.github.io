@@ -15,3 +15,4 @@ Viewers who pick up the telephone receivers can use them to speak with each othe
 This work was produced through a collaboration with artist [Phil Peters](http://philipbpeters.com). Around the turn of the century, as the Bell telephone system connected cities across the US, rural areas were mostly left out. Intrepid ranchers discovered that ad-hoc, decentralized telephone networks could be built out of simple materials at hand, using the pre-existing network of barbed wire fences as transmission lines.
 
 ![Fence opening](/img/large/fence-opening.jpg)
+![Fence detail](/img/large/fence-detail.jpg)
