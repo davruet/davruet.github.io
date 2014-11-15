@@ -7,9 +7,12 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: davruet
 github_username:  davruet
+show_project_titles: false
 
 # Build settings
 markdown: kramdown
 collections:
  projects:
+  output: true
+ texts:
   output: true

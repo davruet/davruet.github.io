@@ -4,7 +4,7 @@
 
 
 .container {
-  max-width: 800px; 
+  max-width: 800px;
 }
 
 .site-title {
@@ -29,15 +29,22 @@
     font-size: 12px;
 }
 
+.project-thumbnail {
+    padding-bottom:20px;
+}
 .project-image {
     display:block;
-   margin-bottom: 20px;
     padding-bottom:5px;
     padding-top:5px;
   -webkit-transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
   -o-transition: opacity .2s ease-in-out;
   transition: opacity .2s ease-in-out;
+}
+.project-caption {
+    text-align: right;
+    font-size: 11px;
+    color: #aaa;    
 }
 
 .project-image:hover {
@@ -219,5 +226,8 @@
     text-align:right;
 }
 
+.license {
+    font-size:10px;
+}
 
 

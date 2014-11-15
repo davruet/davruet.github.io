@@ -8,10 +8,11 @@
     {% include header.html %}
    
       <div class="container" id="main-container">
-           {%if page.image %}
+           {%if page.image %}          
             <div class="featured-image"><img src="/img/large/{{page.image}}"></div>
             {%endif%}
         {{ content }}
+
       </div>
 
     {% include footer.html %}

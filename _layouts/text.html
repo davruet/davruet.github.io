@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="text">
+
+  <header class="post-header">
+    <div class="row">
+        <div class="col-xs-7">
+            <h1 class="post-title">{{ page.title }}</h1>
+        </div>
+        <div class="col-xs-5 project-meta">
+        {% if page.date %}{{ page.date | date: "%Y" }}<br>{% endif %}
+        {% if page.author %} • {{ page.author }}<br>{% endif %}
+        {% if page.meta %} • {{ page.meta }}{% endif %}<br>
+        </div>
+    </div>
+      
+  </header>
+
+  <article class="text-content">
+    {{ content }}
+  </article>
+
+</div>

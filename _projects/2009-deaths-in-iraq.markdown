@@ -1,7 +1,7 @@
 ---
 layout: project
 title:  "Deaths in Iraq (2004-2009)"
-date:   2014-11-08 14:30:56
+date:   2009-01-08 14:30:56
 categories: jekyll update
 square-thumb: iraq-sq.jpg
 image: iraq-sq.jpg

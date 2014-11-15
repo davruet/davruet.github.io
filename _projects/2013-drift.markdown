@@ -1,7 +1,7 @@
 ---
 layout: project
 title:  "Drift"
-date:   2012-11-08 14:30:56
+date:   2013-05-14 14:30:56
 categories: jekyll update
 image: drift-launch-hi.jpg
 square-thumb: launch-sq.jpg
