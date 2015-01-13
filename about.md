@@ -3,22 +3,16 @@ layout: page
 title: about
 permalink: /about/
 ---
+###about
+David Rueter is a visual artist, programmer, and educator. His creative practice makes use of a range of new technologies -- including custom software, custom electronics, data dumps and feeds, GIS software, and computer-assisted manufacturing -- and a variety of traditional media, including sculpture, photography, film, and performance. At the core of his work is a focus on the social practices embedded in both new and old technologies, the ways these practices either challenge or reinforce established categories and hierarchies, and the politics of visibility these practices engender and operate within.
 
-I make things that live in both geographical space and personal space.
+Describing his work, Rueter states:
 
+"I make things that live in both geographical space and personal space.
 I splice strange loops and curious passageways into existing networks.
-
 I build ways to imagine new kinds of political agency.
-
 I conduct field experiments.
+My projects have strained relationships with functionality.
+I fold vast distances into small objects that often disappear."
 
-My projects have strained (convoluted?) relationships with functionality.
-
-I fold vast distances into small objects that often disappear.
-
-
-###bio
-
-David is a graduate of the School of the Art Institute of Chicago’s MFA program in Art and Technology Studies, and works at the intersection of public art, software, electronics, and performance. In 2013, he was awarded a Prix Ars Electronica Honorary Mention in the category of Interactive Art, and received a John W Kurtich scholarship for travel to Scandinavia. His work has been exhibited at galleries and festivals across the US, including the International Symposium on Electronic Art and Northern Spark. Born in Ann Arbor, MI, he graduated from Oberlin College with a BA in Politics and a focus in Political Theory.
-
-
+A graduate of the School of the Art Institute of Chicago's MFA program in Art and Technology Studies, Rueter was awarded a 2013 Prix Ars Electronica Honorary Mention in the category of Interactive Art, and received a John W Kurtich scholarship for travel to Scandinavia. His work has been exhibited at galleries and festivals across the US, including the International Symposium on Electronic Art and Northern Spark. Born in Ann Arbor, MI, he graduated from Oberlin College with a BA in Politics and a focus in Political Theory.
