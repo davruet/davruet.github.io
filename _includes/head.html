@@ -33,4 +33,25 @@
       ga('send', 'pageview');
     
     </script>
+
+    <!-- Fix links so that links away from the site open in a new tab. -->
+    <script>
+
+    function fixLinks(){
+      var links = document.links;
+
+      for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+         if (links[i].hostname != window.location.hostname) {
+             links[i].target = '_blank';
+         } 
+      }
+    }
+
+    function init(){
+      fixLinks();
+    }
+
+    window.onload = init;
+    
+    </script>
 </head>
