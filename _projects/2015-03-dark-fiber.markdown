@@ -32,6 +32,8 @@ Installation shots from [Contemporary Art Brussels](http://cab.be), April 2015:
 
 ![Cert](/img/large/IMG_4772.jpg)
 
+![Cert](/img/large/IMG_4606.jpg)
+
 |---------------------------------|--------------------------------|
 |![Cert](/img/large/IMG_4741.jpg) |![Cert](/img/large/IMG_4712.jpg)|
 
