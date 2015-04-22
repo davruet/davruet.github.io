@@ -24,16 +24,23 @@ The sites, materials, and labor of internet infrastructure are not often illumin
 The node-link diagram, a mathematical abstraction that is now shorthand for the complexity of networked society, can obscure more than it reveals. Dark Fiber traces a different approach to network representation, suggesting that one might instead draw a single line: one that hops between systems and scales, through vast landscapes, industrial infrastructure, media apparatuses, walls and conduits, lived space, and imagined worlds. The result is not an understanding delivered whole, but an experience afforded by walking a path.
 
 
-![Cert](/img/large/IMG_4106.jpg)
+Installation shots from [Contemporary Art Brussels](http://cab.be), April 2015:
 
-![Cert](/img/large/IMG_4123.jpg)
+![Cert](/img/large/IMG_4609.jpg)
 
-![Cert](/img/large/IMG_4150.jpg)
+![Cert](/img/large/IMG_4780.jpg)
 
-![Cert](/img/large/IMG_4257.jpg)
+![Cert](/img/large/IMG_4772.jpg)
 
+|---------------------------------|--------------------------------|
+|![Cert](/img/large/IMG_4741.jpg) |![Cert](/img/large/IMG_4712.jpg)|
+
+|--------------------------------|---------------------------------|
+![Cert](/img/large/IMG_4699.jpg) | ![Cert](/img/large/IMG_4677.jpg)|
+
+<br><br>
 
 We would like to extend special thanks to:
 
-Meghan Moe Beitiks, Allyson Benedict, Alex Benedict, Harry Benedict, Lindsey French, CLUI & Matt Coolidge, Pat Elifritz, Jeremiah Jones, Brian Lee, John & Patricia Lee, Juan Luis Olvera, Marc & Anne Rueter, Andy Tokarski	
+Meghan Moe Beitiks, Allyson Benedict, Alex Benedict, Harry Benedict, Lindsey French, CLUI & Matt Coolidge, Pat Elifritz, Jeremiah Jones, Brian Lee, John & Patricia Lee, Juan Luis Olvera, Marc & Anne Rueter, Andy Tokarski, Dieter Roelstraeta, Abigail Winograd, and Eleonore Desadeleer.
 
