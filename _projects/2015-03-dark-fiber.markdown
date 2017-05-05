@@ -10,11 +10,6 @@ project-url: http://darkfiber.io
 ---
 *** ***  
   
-<div class="alert alert-info">
-  <button type="button" class="close" data-dismiss="alert">&times;</button>
-  Currently on view at <a href="http://cab.be">Contemporary Art Brussels</a> until June 27, with extended opening hours during Art Brussels on 23, 24, 25, 26 April 2015 10AM-6PM
-</div>
-
 *Dark Fiber* is a video installation by artists [Marissa Lee Benedict](http://marissaleebenedict.com) and David Rueter. The 10-minute video features the artists, drilling, burying, and threading fiber optic cable through various landscapes of the western and midwestern USA, and through industrial, commercial, and home interiors. Through practices real and imagined, Benedict and Rueter labor to fabricate a global high-speed telecommunications network.
 
 Video stills:
