@@ -15,7 +15,7 @@ processImg () {
 
 (
 cd img/large
-for f in **/*.jpg
+for f in $(find . -name '*.jpg' -print)
 do
     processImg $f med 700
     processImg $f sm 200
