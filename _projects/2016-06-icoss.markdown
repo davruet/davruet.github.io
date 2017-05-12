@@ -3,8 +3,8 @@ layout: project
 title:  "I Can Only See Shadows"
 date:   2016-06-30 14:30:56
 categories: film
-image: icoss.jpg
-square-thumb: icoss-sq.jpg
+image: icoss/icoss.jpg
+square-thumb: icoss/icoss-sq.jpg
 alt: "I Can Only See Shadows"
 ---
 *** ***  

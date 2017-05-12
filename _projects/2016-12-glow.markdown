@@ -1,0 +1,32 @@
+---
+layout: project
+title:  "Gary Lights Open Works"
+date:   2016-06-30 14:30:56
+categories: film
+image: glow/glow.jpg
+square-thumb: glow/glow-sq.jpg
+alt: "Gary Lights Open Works"
+---
+Throughout 2017, artists David Rueter and Marissa Lee Benedict will develop and install a series of 10 lighting installations in public parks across the city of Gary, Indiana. The "streetlight" installations, in conjunction with a series of public workshops, comprise the artist&rsquo;s collaborative research initiative Gary Lights Open Works (funded in 2016-17 by the National Endowment for the Arts). Gary Lights Open Works aims to uncover, shatter, and reconfigure the settled politics embedded in infrastructural space, sparking the imagination of new potentials for artistic agency through the playful and participatory reconfiguration of civic technology.
+
+![](/img/large/glow/image9.jpg)  
+
+Completed installation of the first solar-powered Gary Lights Open Works &ldquo;streetlight&rdquo; outside the Borman Square Park pavilion in Gary, Indiana. The streetlight is powered by a 50W solar panel, and is completely re-programmable from the ground. Rueter will lead Intro to Electronics workshops, amongst others, during the summer of 2017 to provide community members the tools to program and re-program the light.
+
+![](/img/large/glow/image24.jpg)  
+
+To build the custom streetlight head, Rueter worked at an electronics fabrication facility in Chicago ([mHUB](https://mhubchicago.com/)). Rueter modified an LED streetlight enclosure (in the center of the image) to house custom circuits and sensors, including radio transceivers and remotely re-programmable microcontrollers. 
+
+![](/img/large/glow/image13.jpg)  
+
+Group photo of Thea Bowman Leadership Academy middle and high school students along with school administrators and art teacher William Thomas; School of the Art Institute undergraduates; and artist Jan Tichy and David Rueter. The photo was taken at the conclusion of an energetic workshop using solar and battery powered LED lights, along with construction paper, acrylic and other materials, to create artworks for a temporary installation at Borman Square Park pavilion &ndash; part of activities arranged to coincide with the opening celebration of Gary Lights Open Works first streetlight installation.
+
+![](/img/large/glow/image6.jpg)  
+
+Artist Marissa Lee Benedict installs the first light at Borman Square Park, assisted by Gary city workers.
+
+
+
+Extend special thanks to:
+
+Jan Tichy, Jeffreen Hayes, Lauren Williams, Kyle Terry, and Lindsey French. 
