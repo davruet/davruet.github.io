@@ -1,8 +1,8 @@
 ---
 layout: project
 title:  "Gary Lights Open Works"
-date:   2016-06-30 14:30:56
-categories: film
+date:   2017-01-01 14:30:56
+categories: participatory
 image: glow/glow.jpg
 square-thumb: glow/glow-sq.jpg
 alt: "Gary Lights Open Works"
