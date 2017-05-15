@@ -7,7 +7,7 @@ image: glow/glow.jpg
 square-thumb: glow/glow-sq.jpg
 alt: "Gary Lights Open Works"
 ---
-Throughout 2017, artists David Rueter and Marissa Lee Benedict will develop and install a series of 10 lighting installations in public parks across the city of Gary, Indiana. The "streetlight" installations, in conjunction with a series of public workshops, comprise the artist&rsquo;s collaborative research initiative Gary Lights Open Works (funded in 2016-17 by the National Endowment for the Arts). Gary Lights Open Works aims to uncover, shatter, and reconfigure the settled politics embedded in infrastructural space, sparking the imagination of new potentials for artistic agency through the playful and participatory reconfiguration of civic technology.
+Throughout 2017, artists David Rueter and Marissa Lee Benedict will develop and install a series of 10 lighting installations in public parks across the city of Gary, Indiana. The “streetlight” installations, in conjunction with a series of public workshops, comprise the artist’s collaborative research initiative Gary Lights Open Works. Gary Lights Open Works aims to uncover, shatter, and reconfigure the settled politics embedded in infrastructural space, sparking the imagination of new potentials for artistic agency through the playful and participatory reconfiguration of civic technology. The installations and workshops will question the idea of the "standard" streetlight by developing alternative visions, such as lights that can produce any visible color, blink and fade, react to music, or communicate with other lights.
 
 ![](/img/large/glow/image9.jpg)  
 
@@ -16,10 +16,6 @@ Completed installation of the first solar-powered Gary Lights Open Works &ldquo;
 ![](/img/large/glow/image24.jpg)  
 
 To build the custom streetlight head, Rueter worked at an electronics fabrication facility in Chicago ([mHUB](https://mhubchicago.com/)). Rueter modified an LED streetlight enclosure (in the center of the image) to house custom circuits and sensors, including radio transceivers and remotely re-programmable microcontrollers. 
-
-![](/img/large/glow/image13.jpg)  
-
-Group photo of Thea Bowman Leadership Academy middle and high school students along with school administrators and art teacher William Thomas; School of the Art Institute undergraduates; and artist Jan Tichy and David Rueter. The photo was taken at the conclusion of an energetic workshop using solar and battery powered LED lights, along with construction paper, acrylic and other materials, to create artworks for a temporary installation at Borman Square Park pavilion &ndash; part of activities arranged to coincide with the opening celebration of Gary Lights Open Works first streetlight installation.
 
 ![](/img/large/glow/image6.jpg)  
 
