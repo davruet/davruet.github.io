@@ -11,6 +11,8 @@ project-url: http://1000fireflies.net
 
 In 2012, [Northern Spark](http://northernspark.org) commissioned me to design and construct 1,000 custom bike lights to distribute to cyclists attending its outdoor arts festival in Minneapolis, MN. Using radio transceivers and insights gained from complex systems research, these devices synchronized their blinking patterns with other nearby devices, altering social rules of proximity and generating a citywide self-organizing system.
 
+<iframe src="https://player.vimeo.com/video/46663176" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 ![Cyclists in Minneapolis](/img/large/ride.jpg)
 
 <div class="embed-responsive embed-responsive-16by9">
