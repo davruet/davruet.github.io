@@ -6,6 +6,7 @@ categories: jekyll update
 image: lights16x9-hi.jpg
 square-thumb: lights-sq.jpg
 alt: Lights
+project-url: http://1000fireflies.net
 ---
 
 In 2012, [Northern Spark](http://northernspark.org) commissioned me to design and construct 1,000 custom bike lights to distribute to cyclists attending its outdoor arts festival in Minneapolis, MN. Using radio transceivers and insights gained from complex systems research, these devices synchronized their blinking patterns with other nearby devices, altering social rules of proximity and generating a citywide self-organizing system.
