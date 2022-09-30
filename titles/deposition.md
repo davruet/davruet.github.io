@@ -18,10 +18,10 @@ images:
     -  webimg: deposition-Trading Floor in Session Chicago Board of Trade, 1900 George R. Lawrence, Photographer.jpg
        caption: Photograph of the trading floor of the Chicago Board of Trade, 1900
        workid: 12
-    -  webimg: DANIEL DE PAULA, MARISSA LEE BENEDICT e DAVID RUETER -10, instalação _Deposição_, 34ª Bienal de SP, 09.2021   ©EVERTON BALLARDIN.tiff
+    -  webimg: deposition-everton-10.tiff
        caption: <i>deposition</i>, at the 34th São Paulo Biennial, Brazil, 2021
        workid: 12
-    -  webimg: DANIEL DE PAULA, MARISSA LEE BENEDICT e DAVID RUETER -06, instalação _Deposição_, 34ª Bienal de SP, 09.2021   ©EVERTON BALLARDIN.tiff
+    -  webimg: deposition-everton-06.tiff
        caption: <i>deposition</i>, at the 34th São Paulo Biennial, Brazil, 2021
        workid: 12
     -  webimg: deposition_11.11.21_November 11_MST occupation-_DSC1262.jpg
