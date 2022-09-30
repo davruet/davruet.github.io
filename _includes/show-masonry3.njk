@@ -35,16 +35,23 @@ layout: base.njk
     
 </style>
     <div id="home" class="content"">
-
+    <div class="showInfo">
+        <div class="showTitle"><i>{{pageTitle}}</i></div>
+        <div class="showLocation">{{location}}{{", " if location}}{{dateRange }}</div> 
+        <div class="showArtists">{{artists}}</div>
+        {%if pdf%}
+        <div class="showArtists"><a href="{{pdf}}" target="_blank" >PDF documentation</a></div>
+        {%endif%}
+    </div>
 
     <div class="grid" id="grid">
     {% for im in images %}
     {% set caption = works | workCaption (tags, im)%}
     <div class="grid-item" id="{% if im.id %}{{im.id}}{% else %}{{works | workInfo (im.workid, "Name") + "-" + loop.index + ""  | slug}} {%endif%}">
-        {% set alt = caption | stripHTML %}
+        {% set alt = works | workInfo(im.workid, "Artists") + "," + caption | striptags %}
         {% image "." + page.url +  im["webimg"], alt, "100vw"%}
         <div class="grid-item-caption">
-        {{caption}}
+        {{caption | safe}}
         </div>
     </div>
     
