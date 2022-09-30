@@ -15,7 +15,7 @@ works:
       Artists: Marissa Lee Benedict and David Rueter
 
 images:
-    -  webimg: lamina_DSC5581.tif
+    -  webimg: lamina_DSC5581.jpg
        caption: <i>lâmina</i>, um trabalho um texto, São Paulo, BR, 2021
        workid: 13
        id: lamina
