@@ -90,7 +90,8 @@ async function imageShortcode(src, alt, sizes = "100vw") {
         alt="${alt}"
         srcset="${metadata.jpeg.map(entry => entry.srcset).join(", ")}"
         sizes="${sizes}"
-        src="${lowsrc.url}">`
+        src="${lowsrc.url}"
+        loading="lazy">`
   return html;
         
 /*
