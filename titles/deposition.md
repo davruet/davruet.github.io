@@ -30,7 +30,7 @@ images:
     -  webimg: deposition_11.20.21_ BNegao-FBSP96611_34BSP_211120_LF_603-original.jpg
        caption:  BNegão performance, at <i>deposition</i>, at the 34th São Paulo Biennial, Brazil, 2021
        workid: 12
-    -  webimg: deposition-12.5.21_Neo Muyanga com Coletivo Legítima Defesa-FBSP97408_34BSP_211205_LF_382-original.jpg
+    -  webimg: deposition-Neo-Muyanga.jpg
        caption: Neo Muyanga com Coletivo Legítima Defesa, at <i>deposition</i>, at the 34th São Paulo Biennial, Brazil, 2021 
        workid: 12
     -  webimg: deposition-9.7.21_roger bernat_veronica veloso_maurilo gaulish-FBSP84422_34BSP_210907_LF_132-original.jpg
