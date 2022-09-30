@@ -1,0 +1,79 @@
+---
+title: David Rueter
+url: https://benedictrueter.com
+img: /static/br.jpg
+alt: Documentation of works by artist David Rueter
+---
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+    <head>
+        {% metagen 
+            title=title,
+            desc=site.pageMetadata.home.content,
+            url=url,
+            img=url + img,
+            img_alt=alt,
+            name=site.author.fullName
+        %}
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <meta name="theme-color" content="#fff">
+        <meta name="background-color" content="#fff">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon_data/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon_data/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon_data/favicon-16x16.png">
+        <link rel="manifest" href="/favicon_data/site.webmanifest">
+       
+        {% set css %}
+            {% include "css/style.css" %}
+        {% endset %}
+        <style>
+            {{ css | safe }}
+        </style>
+        <script>
+            const appHeight = () => {
+                const doc = document.documentElement;
+            }
+            window.addEventListener('resize', appHeight)
+            appHeight()
+        </script>
+    </head>
+    <body>
+        <header id="header">
+             <h1>
+                 <a href="/">{{ site.author.fullName}}</a>
+             </h1>
+            <nav>
+               
+                <ul>
+                    <li><a href="/about/">bio + cv</a></li>
+                </ul>
+            </nav>
+        </header>
+        <script>
+            let header = document.querySelector("header")
+            function setTitleColor(tc){
+                if (!tc){
+                    tc = "#fff";
+                }
+                [...document.querySelectorAll("header a, footer, .overlay")].forEach(a=>{a.setAttribute("style", "color: " + tc)});
+            }
+        </script>
+        <main>
+             {{ content | safe}}
+        </main>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-info home">
+                    <ul class="footer-links">
+                        <li class="footer-link"><a target="none" href="{{ site.socials.instagram }}">@mlb.dr</a></li>
+                    </ul>
+                    <div class="copyright"><p>&copy; {% getYear %} {{ site.author.shortName }}.</p></div>
+
+                </div>
+            </div>
+
+        </footer>
+    </body>
+</html>

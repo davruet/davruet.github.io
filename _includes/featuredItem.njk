@@ -1,0 +1,13 @@
+<div class="showTitle">{{item.data.pageTitle}}</div>
+<div class="showLocation">{{item.data.location}}</div>
+<div class="showDate">{{item.date | showDate}}</div>
+
+
+<div class="carousel" data-flickity='{ "cellAlign": "left", "contain": true, "lazyLoad": 2, "setGallerySize": false, "pageDots": false, "fullscreen": true}'>
+{% for i in item.data.images %}
+<div class="carousel-cell">
+    {% image "." + item.url +  i["web-img"], i.Name, "70vh"%}
+    {% include "workCaption.njk" %}
+</div>
+{% endfor %}
+</div>

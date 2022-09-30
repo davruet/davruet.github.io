@@ -1,0 +1,22 @@
+{   
+    "author": {
+        "fullName": "David Rueter",
+        "shortName": "David Rueter",
+        "email": "info@benedictrueter.com"
+    },
+    "socials": {
+        "instagram": "https://www.instagram.com/mlb.dr/"
+    },
+    "pageMetadata": {
+        "home": {
+            "content": "Documentation of the works of David Rueter."
+        },
+        "featured": {
+            "content": "Featured works of David Rueter."
+        },
+        "about": {
+            "content": "Documentation of the works of David Rueter."
+        }
+
+    }
+}

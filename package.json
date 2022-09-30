@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "@11ty/eleventy-img": "^2.0.1",
+    "@videojs/http-streaming": "^2.13.1",
+    "csv-parse": "^4.15.3",
+    "eleventy-plugin-embed-instagram": "^1.2.0",
+    "eleventy-plugin-metagen": "^1.5.2",
+    "frontend-dependencies": "^2.0.0",
+    "terser": "^5.12.0"
+  },
+  "frontendDependencies": {
+    "target": "static/",
+    "packages": {
+      "@videojs/http-streaming": {
+        "version": "^2.13.1",
+        "src": "dist/video-js.min.js"
+      }
+    }
+  }
+}

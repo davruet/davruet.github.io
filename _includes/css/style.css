@@ -1,0 +1,233 @@
+* { 
+  margin: 0;
+  padding: 0;
+  
+}
+
+@font-face {
+  font-family: 'icons';
+  src: url('/static/font/icons.eot');
+  src: url('/static/font/icons.eot') format('embedded-opentype'),
+       url('/static/font/icons.woff') format('woff'),
+       url('/static/font/icons.ttf') format('truetype'),
+       url('/static/font/icons.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  
+}
+
+@font-face {
+  font-family: 'Source Serif Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Source Serif Regular'), 
+    url('/static/font/SourceSerif4-Regular.ttf.woff') format('woff'),
+    url('/static/font/SourceSerif4-Regular.ttf.woff2') format('woff2'),
+    url('/static/font/SourceSerif4-Regular.ttf') format('ttf');
+  }
+
+@font-face {
+  font-family: 'Akzidenz Grotesk Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Akzidenz Grotesk Light'), url('/static/font/akzidenzgrotesk-light-webfont.woff') format('woff');
+  }
+  
+@font-face {
+font-family: 'Acumin Pro';
+font-style: normal;
+font-weight: normal;
+src: local('Acumin Pro'), url('/static/font/Acumin-RPro.woff') format('woff');
+}
+  
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 1em 1em;
+}
+
+header h1 {
+  font-size: 1.7em;
+  flex: 1;
+  padding: 0 5vw 0 0;
+  font-family: 'Source Serif Regular';
+  text-transform: uppercase;  
+   
+}
+
+nav ul {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+nav li .link {
+  color: #212121;
+  font-weight: 500;
+  font-size: 12px;
+  font-family: 'Acumin Pro';
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  text-decoration: none;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 1em;
+  right: 1em;
+  z-index: 2;
+}
+
+.footer-content {
+  font-family: 'Acumin Pro';
+  text-align: right;
+}
+
+ul.footer-links {
+  list-style-type:none;
+}
+
+body {
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: blue);
+}
+
+a:hover {
+  border-bottom: 1px solid;
+}
+
+
+a[href*="//"]:hover:after {
+  color: var(--highlight);
+  opacity: 1;
+}
+
+
+
+h2, h3, h4 {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.slides {
+}
+
+
+
+html {
+      scroll-snap-type: y mandatory;
+}
+
+figure {
+  margin: 0px auto;
+  height: 100vh;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.video-js {
+  margin: 0px 0px;
+  padding: 0px;
+
+}
+
+video {
+ object-fit: cover;
+}
+
+.control-button {
+  font-family: "icons";
+  font-variant: normal;
+  text-transform: none;
+  font-size: .8em;
+  color: #fff;
+  speak: never;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle;
+}
+
+.scroll-button {
+  font-size: 2em;
+}
+
+
+.scroll-button-div {
+  bottom: 4em;
+  right: 1em;
+  position: fixed;
+  text-align: right;
+  width: 100%;
+}
+
+.work-title-div {
+    text-align: left;
+    top: 6em;
+    left: 1em;
+    position: absolute;
+}
+
+.work-title {
+  width: 100%;
+  font-size: 18px;
+  color: #fff;
+   font-family: "Acumin Pro";
+   display: inline;
+}
+
+.work-title-links {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.workCaption {
+  font-family: 'Acumin Pro';
+  font-size: 80%;
+  display: block;
+  padding-top:.5rem;
+}
+
+.workCaptionItem {
+  display: inline;
+}
+
+
+.copyright {
+  font-size: 60%;
+}
+
+.showTitle, .showLocation, .showDate, .showArtists, .carouselText {
+  font-family: 'Acumin Pro';
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  fill: currentColor;
+}
+
+.content {
+    padding: 6em 1em 4em 1em;
+
+}
+
+
+.textblock {
+  max-width: clamp(85ch, 50%, 125ch);
+  margin: 0 auto;
+  font-family: 'Acumin Pro';
+}
+
+p {
+  margin-bottom: 2em;
+}

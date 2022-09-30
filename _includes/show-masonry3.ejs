@@ -1,0 +1,75 @@
+---
+title: David Rueter
+url: https://davidrueter.com
+img: /static/br.jpg
+alt: Documentation of works by artist David Rueter
+
+---
+
+<style>    
+    .grid {
+        width: 100%; 
+        margin 0;
+    }
+    @media (min-width: 960px){
+        .grid-item {
+            width: calc((33% - 10px));
+            padding-bottom: 20px;
+         }
+        
+    }
+    @media (max-width: 960px){
+        .grid-item { 
+            width: 100%;
+            padding-bottom: 1em;
+        }
+    }
+
+    .grid-item-caption {
+    }
+    
+    .showInfo {
+        padding-bottom: 1em;
+    }
+   
+    
+</style>
+    <div id="home" class="content"">
+
+    <div class="grid" id="grid">
+    {% for (im in images) { %}
+    <div class="grid-item" id="{{works | workInfo (im.workid, "Name") | slug}}-{{loop.index + "" | slug}}">
+        {% set alt = works | workInfo (im.workid, "Name") %}
+        {% image "." + page.url +  im["webimg"], works | workInfo (im.workid, "Artists") + ", " + im["caption"] | stripHTML, "100vw"%}
+        <div class="grid-item-caption">
+        {% workCaption works, tags, im %}
+        </div>
+    </div>
+    
+    {% } %}
+    </div>
+    </div>
+    
+    
+    <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script>
+        setTitleColor("#000");
+        var elem = document.querySelector('.grid');
+        var mry = new Masonry( elem, {
+        // options
+        itemSelector: '.grid-item',
+        gutter: 20,
+        percentPosition: true,
+        //isFitWidth: true
+        //columnWidth: '.grid-sizer'
+        });
+
+        
+        imagesLoaded(document.querySelector('.grid')).on('progress', ()=>{
+            mry.layout();
+        });
+    </script>
+    
+   <!-- </section>-->
+           
