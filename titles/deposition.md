@@ -27,7 +27,7 @@ images:
     -  webimg: deposition_11.11.21_November 11_MST occupation-_DSC1262.jpg
        caption: <i>deposition</i>, occupied by MST, at the 34th São Paulo Biennial, Brazil, 2021
        workid: 12
-    -  webimg: deposition_11.20.21_ BNegão-FBSP96611_34BSP_211120_LF_603-original.jpg
+    -  webimg: deposition_11.20.21_ BNegao-FBSP96611_34BSP_211120_LF_603-original.jpg
        caption:  BNegão performance, at <i>deposition</i>, at the 34th São Paulo Biennial, Brazil, 2021
        workid: 12
     -  webimg: deposition-12.5.21_Neo Muyanga com Coletivo Legítima Defesa-FBSP97408_34BSP_211205_LF_382-original.jpg
