@@ -172,7 +172,9 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy("shows/**/*.m3u8")
     eleventyConfig.addPassthroughCopy("shows/**/*.ts")
     eleventyConfig.addPassthroughCopy("titles/**/*.pdf")
-
+    
+    eleventyConfig.addPassthroughCopy("_redirects")
+    eleventyConfig.addPassthroughCopy("robots.txt")
     //eleventyConfig.addPassthroughCopy({"shows/**/hls/*": "v"})
 
 
