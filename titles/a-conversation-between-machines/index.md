@@ -7,7 +7,7 @@ date: 2023-01-25
 tags: ['shows', 'images']
 
 works:
-   15:
+   16:
       Name: a conversation between machines about Mallarmé (regarding the state of the gallery lights), 2023
       Year: 2023
       Dimensions: Dimensions Variable
@@ -16,20 +16,20 @@ works:
 images: 
     -  webimg: _DSC5635-2.jpg
        caption: "a conversation between machines about Mallarmé (regarding the state of the gallery lights), 2023, Rotterdam, NL"
-       workid: 1
+       workid: 16
     -  webimg: _DSC5658.jpg
-       caption: ""
-       workid: 1
+       caption: "a conversation between machines about Mallarmé (regarding the state of the gallery lights), 2023, Rotterdam, NL"
+       workid: 16
     -  webimg: _DSC5684.jpg
-       caption: ""
-       workid: 1
+       caption: "a conversation between machines about Mallarmé (regarding the state of the gallery lights), 2023, Rotterdam, NL"
+       workid: 16
     -  webimg: _DSC5667-3.jpg
-       caption: ""
-       workid: 1
+       caption: "a conversation between machines about Mallarmé (regarding the state of the gallery lights), 2023, Rotterdam, NL"
+       workid: 16
     -  webimg: _DSC5663.jpg
-       caption: ""
-       workid: 1
+       caption: "a conversation between machines about Mallarmé (regarding the state of the gallery lights), 2023, Rotterdam, NL"
+       workid: 16
     -  webimg: _DSC5678-2.jpg
-       caption: ""
-       workid: 1
+       caption: "a conversation between machines about Mallarmé (regarding the state of the gallery lights), 2023, Rotterdam, NL"
+       workid: 16
 ---
