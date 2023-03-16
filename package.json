@@ -16,5 +16,8 @@
         "src": "dist/video-js.min.js"
       }
     }
+  },
+  "devDependencies": {
+    "@quasibit/eleventy-plugin-schema": "^1.11.0"
   }
 }

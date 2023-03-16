@@ -65,3 +65,7 @@ _[Dark Fiber](/titles/dark-fiber/)_, The Works: Artists In and From Chicago, Con
 
 _[The Kuramoto Model](/titles/the-kuramoto-model/)_, Northern Lights, Minneapolis, MN, USA
  
+ 
+ ## IMAGE LICENSING
+ 
+ For image licensing inquiries, please contact info@benedictrueter.com.

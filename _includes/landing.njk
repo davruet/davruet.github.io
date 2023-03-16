@@ -1,6 +1,6 @@
 ---
 title: David Rueter
-url: https://benedictrueter.com
+url: https://davidrueter.com
 img: /static/br.jpg
 alt: Documentation of works by artist David Rueter
 layout: base.njk
@@ -35,6 +35,8 @@ layout: base.njk
    
     
 </style>
+<link rel="stylesheet" href="https://vjs.zencdn.net/8.0.4/video-js.css">
+
 
 <div id="home" class="content">
 
@@ -43,8 +45,28 @@ layout: base.njk
     {% for im in item.data.images %}
         {% set caption = item.data.works | workCaption (item.data.tags, im)%}
          <div class="grid-item" id="{% if im.id %}{{im.id}}{% else %}{{item.data.works | workInfo (im.workid, "Name") + "-" + loop.index + ""  | slug}} {%endif%}">
-            {% set alt = item.data.works | workInfo(im.workid, "Artists") + "," + caption | striptags %}
+            {% if "webimg" in im %}
+            {% set alt = item.data.works | workInfo(im.workid, "Artists") + ", " + caption | striptags %}
+            <div vocab="https://schema.org/" typeof="ImageObject">
+            <span property="name" content="{{caption | striptags}}"></span>
             {% image "." + item.data.page.url + im["webimg"], alt, "100vw"%}
+                <span rel="schema:creator">
+                    <span typeof="schema:Person">
+                    <span property="schema:name" content="David Rueter"></span>
+                    </span>
+                </span>
+                <span property="copyrightNotice" content="David Rueter"></span>
+                <span property="license" content="https://davidrueter.com/about/"></span>
+                <span property="creditText" content="David Rueter"></span>
+                <span property="acquireLicensePage" content="https://davidrueter.com/about/">
+            </div>
+            {% elif "webvid" in im %}
+            
+            <video-js class="vjs-big-play-centered" data-setup='{"fluid": true, "controls": true}'>
+                <source src="{{item.data.page.url}}{{im["webvid"] | videoURL}}" type="application/x-mpegURL">
+            </video-js>
+            {% endif %}
+        
             <div class="grid-item-caption">
             {{caption | safe}}
             </div>
@@ -54,7 +76,7 @@ layout: base.njk
     </div>
 </div>
     
-    
+    <script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script>
@@ -73,6 +95,7 @@ layout: base.njk
         imagesLoaded(document.querySelector('.grid')).on('progress', ()=>{
             mry.layout();
         });
+        mry.layout();
     </script>
             
 <div class="content textblock">

@@ -7,6 +7,8 @@ const inspect = require("util").inspect;
 
 
 const embedInstagram = require("eleventy-plugin-embed-instagram");
+const schema = require("@quasibit/eleventy-plugin-schema");
+
 
 
 async function imageLightgalleryShortcode(src, alt, sizes="100vw"){
@@ -91,6 +93,7 @@ async function imageShortcode(src, alt, sizes = "100vw") {
         srcset="${metadata.jpeg.map(entry => entry.srcset).join(", ")}"
         sizes="${sizes}"
         src="${lowsrc.url}"
+        property="contentUrl"
         loading="lazy">`
   return html;
         
@@ -167,8 +170,8 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy("static");
     //eleventyConfig.addPassthroughCopy({"projects/**/*.mp4": "v"})
     //eleventyConfig.addPassthroughCopy({"shows/**/*.mp4": "v"})
-    eleventyConfig.addPassthroughCopy("projects/**/*.m3u8")
-    eleventyConfig.addPassthroughCopy("projects/**/*.ts")
+    eleventyConfig.addPassthroughCopy("titles/**/*.m3u8")
+    eleventyConfig.addPassthroughCopy("titles/**/*.ts")
     eleventyConfig.addPassthroughCopy("shows/**/*.m3u8")
     eleventyConfig.addPassthroughCopy("shows/**/*.ts")
     eleventyConfig.addPassthroughCopy("titles/**/*.pdf")
@@ -199,10 +202,19 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addNunjucksAsyncShortcode("fotorama", fotoramaImage);
 
     eleventyConfig.addPlugin(embedInstagram);
+    eleventyConfig.addPlugin(schema);
+
     
     eleventyConfig.addFilter("stripHTML", (post) => {
      return post.replace(/(<([^>]+)>)/gi, ""); 
     });
+    
+    eleventyConfig.addFilter('htmlDateString', (dateObj) => {
+      return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd')
+    })
+    eleventyConfig.addFilter('iso8601', (dateObj) => {
+      return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toISO()
+    })
     
     /*
     eleventyConfig.setBrowserSyncConfig({
