@@ -1,10 +1,11 @@
 ---
-title: David Rueter
-url: https://davidrueter.com
+title: Marissa Lee Benedict and David Rueter
+url: https://benedictrueter.com
 img: /static/br.jpg
-alt: Documentation of works by artist David Rueter
+alt: Documentation of works by artists Marissa Lee Benedict and David Rueter
 layout: base.njk
 ---
+<link rel="stylesheet" href="https://vjs.zencdn.net/8.0.4/video-js.css">
 
 <style>    
     .grid {
@@ -13,7 +14,7 @@ layout: base.njk
     }
     @media (min-width: 960px){
         .grid-item {
-            width: calc((33% - 10px));
+            width: calc((50% - 10px));
             padding-bottom: 20px;
          }
         
@@ -39,20 +40,25 @@ layout: base.njk
         <div class="showTitle"><i>{{pageTitle}}</i></div>
         <div class="showLocation">{{location}}{{", " if location}}{{dateRange }}</div> 
         <div class="showArtists">{{artists}}</div>
-        {%if pdf%}
         <div class="showArtists"><a href="{{pdf}}" target="_blank" >PDF documentation</a></div>
-        {%endif%}
     </div>
 
     <div class="grid" id="grid">
     {% for im in images %}
-    {% set caption = works | workCaption (tags, im)%}
-    <div class="grid-item" id="{% if im.id %}{{im.id}}{% else %}{{works | workInfo (im.workid, "Name") + "-" + loop.index + ""  | slug}} {%endif%}">
-        {% set alt = works | workInfo(im.workid, "Artists") + "," + caption | striptags %}
-        {% image "." + page.url +  im["webimg"], alt, "100vw"%}
+    <div class="grid-item" id="{{pageTitle | slug}}-{{loop.index + "" | slug}}">
+        {% if "webimg" in im %}
+            {% set alt = works | workInfo (im.workid, "Name") %}
+            {% image "." + page.url +  im["webimg"], artists + ", " + works | workInfo (im.workid, "Name"), "100vw"%}
+            
+        {% elif "webvid" in im %}
+         <video-js class="vjs-big-play-centered" data-setup='{"fluid": true, "controls": true}'>
+            <source src="{{page.url}}{{im["webvid"] | videoURL}}" type="application/x-mpegURL">
+        </video-js>
+        {% endif %}
         <div class="grid-item-caption">
-        {{caption | safe}}
+            {% workCaption works, tags, im %}
         </div>
+            
     </div>
     
     {% endfor %}
@@ -60,8 +66,10 @@ layout: base.njk
     </div>
     
     
+    <script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
     <script>
         setTitleColor("#000");
         var elem = document.querySelector('.grid');
@@ -78,6 +86,13 @@ layout: base.njk
         imagesLoaded(document.querySelector('.grid')).on('progress', ()=>{
             mry.layout();
         });
+        mry.layout();
+        
+        let videos = [...document.querySelectorAll('.video-js')];
+         videos.forEach(video=>{
+            video.addEventListener('loadedmetadata', function(){ alert('lmd'); })
+         });
+
     </script>
     
    <!-- </section>-->
