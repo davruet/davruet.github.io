@@ -6,8 +6,6 @@ alt: Documentation of works by artist David Rueter
 layout: base.njk
 ---
 
-{% import "gridItem.njk" as gi %}
-{% import "workText.njk" as wt %}
 
 <style>    
     .grid {
@@ -45,8 +43,34 @@ layout: base.njk
     <div class="grid" id="grid">
     {% for item in collections.images | reverse %}
     {% for im in item.data.images %}
-         <div class="grid-item" id="{% if im.id %}{{im.id}}{% else %}{{(wt.workInfo(item.data.works,im.workid, "Name") + "-" + loop.index + "")  | striptags | slug}} {%endif%}">
-            {{ gi.gridItem(im, item.data.works, item.data.page.url, item.data.page.url, true) | safe}}
+        {% set caption = item.data.works | workCaption (item.data.tags, im)%}
+         <div class="grid-item" id="{% if im.id %}{{im.id}}{% else %}{{item.data.works | workInfo (im.workid, "Name") + "-" + loop.index + ""  | slug}} {%endif%}">
+            {% if "webimg" in im %}
+            {% set alt = item.data.works | workInfo(im.workid, "Artists") + ", " + caption | striptags %}
+            <div vocab="https://schema.org/" typeof="ImageObject">
+            <span property="name" content="{{caption | striptags}}"></span>
+            {% image "." + item.data.page.url + im["webimg"], alt, "100vw"%}
+                <span rel="schema:creator">
+                    <span typeof="schema:Person">
+                    <span property="schema:name" content="David Rueter"></span>
+                    <span property="schema:disambiguatingDescription" content="Artist"></span>
+                    </span>
+                </span>
+                <span property="copyrightNotice" content="David Rueter"></span>
+                <span property="license" content="https://davidrueter.com/about/"></span>
+                <span property="creditText" content="David Rueter"></span>
+                <span property="acquireLicensePage" content="https://davidrueter.com/about/">
+            </div>
+            {% elif "webvid" in im %}
+            
+            <video-js class="vjs-big-play-centered" data-setup='{"fluid": true, "controls": true}'>
+                <source src="{{item.data.page.url}}{{im["webvid"] | videoURL}}" type="application/x-mpegURL">
+            </video-js>
+            {% endif %}
+        
+            <div class="grid-item-caption">
+            {{caption | safe}}
+            </div>
         </div>
     {% endfor %}
     {% endfor %}
@@ -71,7 +95,6 @@ layout: base.njk
         
         imagesLoaded(document.querySelector('.grid')).on('progress', ()=>{
             mry.layout();
-            console.log("layout!");
         });
         mry.layout();
     </script>

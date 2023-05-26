@@ -13,7 +13,6 @@ works:
       Artists: Marissa Lee Benedict and David Rueter
 images:
     -  webimg: GLOW-Gary-court.tif
-       workid: 7
        caption: "<i>Gary Lights Open Works</i> (installation view), 2018, Gary, IN, USA"
 
 ---

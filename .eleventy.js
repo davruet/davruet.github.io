@@ -74,17 +74,13 @@ async function imagePoster(src, sizes = "100vw"){
 }
 
 
-
-function imageShortcode(src, alt, sizes = "100vw") {
+async function imageShortcode(src, alt, sizes = "100vw") {
   if(alt === undefined) {
     // You bet we throw an error on missing alt (alt="" works okay)
     throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
   }
-  if (src == undefined) {
-    throw new Error(`Missing \`src\` on responsiveimage.`);
-  }
 
-  let metadata = Image.statsSync(src, {
+  let metadata = await Image(src, {
     widths: [600, 1200, 1920, 3000],
     formats: ['jpeg'],
     outputDir: "./_site/img/"
@@ -136,16 +132,24 @@ function workInfo(dict, workid, arg){
 
 }
 
-function workCaption(works, workid, short=true, prefix=""){
+function workCaption(works, tags, image){
     assert(works, "No works argument specified.")
-
+    assert(tags, "No tags element specified");
+    assert(image, "No image specified");
+    if (tags.includes('shows') && ! ('caption' in image)){
+      let prefix = ('prefix' in image)?image.prefix:""
       return `<div class="workCaption">
       ${prefix}
-      <div class="workTitle workCaptionItem"><i>${workInfo (works, workid, "Name")}</i></div>,
-      <div class="workCaptionItem">${workInfo (works, workid, "Year")}</div>,
-      <div class="workCaptionItem">${workInfo (works, workid, "Medium")}</div>,
-      <div class="workCaptionItem">${workInfo (works, workid, "Size")}</div>
+      <div class="workTitle workCaptionItem"><i>${workInfo (works, image.workid, "Name")}</i></div>,
+      <div class="workCaptionItem">${workInfo (works, image.workid, "Year")}</div>,
+      <div class="workCaptionItem">${workInfo (works, image.workid, "Medium")}</div>,
+      <div class="workCaptionItem">${workInfo (works, image.workid, "Size")}</div>
       </div>`
+    } else {
+      return ` <div class="workCaption">
+              <div class="workCaptionItem">${image.caption}</div>
+          </div>`
+    }
 }
 
 function videoURL(videoName){
@@ -180,7 +184,7 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addFilter("workInfo", workInfo);
     eleventyConfig.addFilter("workCaption", workCaption);
 
-    eleventyConfig.addNunjucksShortcode("image", imageShortcode);
+    eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
     eleventyConfig.addNunjucksAsyncShortcode("imagePoster", imagePoster);
 
     eleventyConfig.addNunjucksAsyncShortcode("imagelg", imageLightgalleryShortcode);

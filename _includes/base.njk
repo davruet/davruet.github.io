@@ -7,7 +7,7 @@ alt: Documentation of works by artist David Rueter
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
     <!---
-    All materials copyright 2023 David Rueter, unless otherwise noted. All rights reserved.
+    All materials copyright 2022 David Rueter, unless otherwise noted. All rights reserved.
     -->
     <head>
         {% metagen 
@@ -18,13 +18,15 @@ alt: Documentation of works by artist David Rueter
             img_alt=alt,
             name=site.author.fullName
         %}
-        <meta name="robots" content="index,follow">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+
         <meta name="theme-color" content="#fff">
         <meta name="background-color" content="#fff">
         
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon_data/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon_data/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon_data/favicon-16x16.png">
+        <link rel="manifest" href="/favicon_data/site.webmanifest">
        
         {% set css %}
             {% include "css/style.css" %}
@@ -38,16 +40,6 @@ alt: Documentation of works by artist David Rueter
             }
             window.addEventListener('resize', appHeight)
             appHeight()
-        </script>
-        
-        <script type="application/ld+json">
-        {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "David Rueter",
-        "disambiguatingDescription": "Artist",
-        "birthDate": "1978-02-13"
-        }
         </script>
     </head>
     <body>

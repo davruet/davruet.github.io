@@ -14,7 +14,6 @@ works:
 
 images:
     -  webimg: I_Can_Only_See_Shadows-Petcoke Installation-16.jpg
-       workid: 6
        caption: "<i>I Can Only See Shadows</i>, 2016, Museum of Contemporary Photography, Chicago, IL, USA"
    
 ---

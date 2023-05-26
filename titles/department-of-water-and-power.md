@@ -15,6 +15,5 @@ works:
       Artists: Marissa Lee Benedict and David Rueter
 images:
     -  webimg: DWP-combined@0.33x.jpg
-       workid: 9
        caption: "<i>Department of Water and Power</i>, 2019, Jan van Eyck Academie Open Studios, Maastricht, NL"
 ---

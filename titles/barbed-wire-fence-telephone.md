@@ -13,7 +13,6 @@ works:
       
 images:
     -  webimg: barbed-wire-fence-telephone.jpg
-       workid: 4
        caption: "<i>Barbed Wire Fence Telephone</i>, 2014, ARC Gallery, Chicago, IL, USA"
 ---
 
