@@ -14,16 +14,22 @@ works:
 
 images:
     -  webimg: repose_DSC4337.jpg
+       workid: 10
        caption: "<i>Repose</i>, 2020, Arts Club of Chicago, USA"
     -  webimg: repose-screensaver1.png
+       workid: 10
        caption: "<i>Repose</i> (still image of screensaver on gallery computer), 2020, Arts Club of Chicago, USA"
     -  webimg: repose_DSC4381.jpg
+       workid: 10
        caption: "<i>Repose</i> (installation detail), 2020, Arts Club of Chicago, USA"
     -  webimg: repose_DSC4394.jpg
+       workid: 10
        caption: "<i>Repose</i> (installation detail), 2020, Arts Club of Chicago, USA"
     -  webimg: repose-animation.jpg
+       workid: 10
        caption: "<i>Repose</i> (still image from work process documentation), 2020, Arts Club of Chicago, USA"
     -  webimg: repose-deposition.png
+       workid: 10
        caption: "<i>Repose</i> (still image from work process documentation), 2020, Arts Club of Chicago, USA"
        
 ---

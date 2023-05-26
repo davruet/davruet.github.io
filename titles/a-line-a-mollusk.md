@@ -5,6 +5,7 @@ layout: show-masonry3.njk
 tags: ['images','shows']
 date: 2021-01-01
 pdf: 2021_Benedict_Rueter_a_line_a_mollusk.pdf
+autoFillCaptions: true
 
 images:
     -  webimg: a-line-a-mollusk_DSC4683.jpg

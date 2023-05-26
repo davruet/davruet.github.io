@@ -205,6 +205,9 @@ video {
   display: inline;
 }
 
+.workTitle {
+  font-style: italic;
+}
 
 .copyright {
   font-size: 60%;

@@ -13,7 +13,9 @@ works:
       Artists: David Rueter
 images:
     -  webimg: 1kff-lights16x9-hi.jpg
+       workid: 1
        caption: "<i>The Kuramoto Model</i> (lights, pre-distribution), 2012, Northern Spark, Minneapolis, MN, USA"
     -  webimg: 1kff-ride.jpg
+       workid: 1
        caption: "<i>The Kuramoto Model</i> (midnight bike ride), 2012, Northern Spark, Minneapolis, MN, USA"
 ---
