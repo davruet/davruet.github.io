@@ -5,6 +5,9 @@ img: /static/br.jpg
 alt: Documentation of works by artists Marissa Lee Benedict and David Rueter
 layout: base.njk
 ---
+{% import "gridItem.njk" as gi %}
+{% import "workText.njk" as wt %}
+
 <link rel="stylesheet" href="https://vjs.zencdn.net/8.0.4/video-js.css">
 
 <style>    
@@ -35,30 +38,20 @@ layout: base.njk
    
     
 </style>
-    <div id="home" class="content"">
+    <div id="home" class="content">
     <div class="showInfo">
         <div class="showTitle"><i>{{pageTitle}}</i></div>
         <div class="showLocation">{{location}}{{", " if location}}{{dateRange }}</div> 
         <div class="showArtists">{{artists}}</div>
+        {% if pdf %}
         <div class="showArtists"><a href="{{pdf}}" target="_blank" >PDF documentation</a></div>
+        {% endif %}
     </div>
 
     <div class="grid" id="grid">
     {% for im in images %}
     <div class="grid-item" id="{{pageTitle | slug}}-{{loop.index + "" | slug}}">
-        {% if "webimg" in im %}
-            {% set alt = works | workInfo (im.workid, "Name") %}
-            {% image "." + page.url +  im["webimg"], artists + ", " + works | workInfo (im.workid, "Name"), "100vw"%}
-            
-        {% elif "webvid" in im %}
-         <video-js class="vjs-big-play-centered" data-setup='{"fluid": true, "controls": true}'>
-            <source src="{{page.url}}{{im["webvid"] | videoURL}}" type="application/x-mpegURL">
-        </video-js>
-        {% endif %}
-        <div class="grid-item-caption">
-            {% workCaption works, tags, im %}
-        </div>
-            
+        {{ gi.gridItem(im, works, page.url, null, autoFillCaptions) | safe}}
     </div>
     
     {% endfor %}
