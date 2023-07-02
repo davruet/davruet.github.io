@@ -155,6 +155,10 @@ function videoURL(videoName){
 
 module.exports = (eleventyConfig) => {
 
+    if (process.env.ELEVENTY_URL) {
+      site.baseURL = process.env.ELEVENTY_URL;
+    }
+
     eleventyConfig.addPlugin(metagen);
 
      // get the current year to be placed in the footer
