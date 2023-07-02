@@ -4,6 +4,7 @@ artists: Marissa Lee Benedict and David Rueter
 layout: show-masonry3.njk
 tags: ['images','shows']
 date: 2016-09-01
+location: The Museum of Contemporary Photography, Chicago, USA
 
 works:
    6:
@@ -13,8 +14,12 @@ works:
       Artists: Marissa Lee Benedict and David Rueter
 
 images:
-    -  webimg: I_Can_Only_See_Shadows-Petcoke Installation-16.jpg
+    -  webvid: icoss-excerpt-hls
+    -  webimg: Petcoke-Installation-16.jpg
+       caption: 'Installation view'
        workid: 6
-       caption: "<i>I Can Only See Shadows</i>, 2016, Museum of Contemporary Photography, Chicago, IL, USA"
+    -  webimg: Petcoke-Installation-18.jpg
+       caption: 'Installation view'
+       workid: 6
    
 ---

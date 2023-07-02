@@ -4,6 +4,8 @@ artists: Marissa Lee Benedict, Daniel de Paula, and David Rueter
 layout: show-masonry3.njk
 tags: ['images','shows']
 date: 2020-06-01
+pdf: 2020_Benedict_Rueter_de_Paula_Repose.pdf
+location: The Arts Club of Chicago, Chicago, USA
 
 works:
    10:
@@ -13,6 +15,7 @@ works:
       Dimensions: Dimensions Variable
 
 images:
+    -  webvid: repose-hls
     -  webimg: repose_DSC4337.jpg
        workid: 10
        caption: "<i>Repose</i>, 2020, Arts Club of Chicago, USA"

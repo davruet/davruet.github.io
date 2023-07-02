@@ -12,6 +12,7 @@ works:
       Medium: Installation
       Artists: David Rueter
 images:
+    -  webvid: kuramoto-vid
     -  webimg: 1kff-lights16x9-hi.jpg
        workid: 1
        caption: "<i>The Kuramoto Model</i> (lights, pre-distribution), 2012, Northern Spark, Minneapolis, MN, USA"

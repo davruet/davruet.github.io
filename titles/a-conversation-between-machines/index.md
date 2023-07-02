@@ -1,7 +1,7 @@
 ---
 pageTitle: a conversation between machines about Mallarmé (regarding the state of the gallery lights)
 layout: show-masonry3.njk
-location: Rotterdam, Netherlands
+location: Rotterdam, NL
 artists: Marissa Lee Benedict and David Rueter
 date: 2023-01-25
 tags: ['shows', 'images']

@@ -4,6 +4,7 @@ artists: Phil Peters and David Rueter
 layout: show-masonry3.njk
 tags: ['images','shows']
 date: 2014-02-01
+location: ACRE, Chicago, USA
 works:
    3:
       Name: Walk / Talk

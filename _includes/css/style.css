@@ -94,11 +94,12 @@ ul.footer-links {
 
 body {
   font-size: 15px;
+  font-family: "Acumin Pro";
 }
 
 a {
   text-decoration: none;
-  color: blue);
+  color: blue;
 }
 
 a:hover {
@@ -215,6 +216,17 @@ video {
 
 .showTitle, .showLocation, .showDate, .showArtists, .carouselText {
   font-family: 'Acumin Pro';
+}
+
+
+.landingList {
+  font-family: 'Acumin Pro';
+  display: inline;
+}
+.landingListLocation {
+  font-family: 'Acumin Pro';
+  font-size: .8em;
+  display: inline;
 }
 
 img, svg {

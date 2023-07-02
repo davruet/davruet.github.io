@@ -40,19 +40,30 @@ layout: base.njk
     <div id="home" class="content">
     <div class="showInfo">
         <div class="showTitle"><i>{{pageTitle}}</i></div>
-        <div class="showLocation">{{location}}{{", " if location}}{{dateRange }}</div> 
+        <div class="showLocation">{{page.date.getFullYear()}}</div>
+        {%if location %}
+        <div class="showLocation">{{location}}</div> 
+        {%endif%}
         <div class="showArtists">{{artists}}</div>
         {% if pdf %}
         <div class="showArtists"><a href="{{pdf}}" target="_blank" >PDF documentation</a></div>
         {% endif %}
     </div>
+    
+    {% set previousPost = collections.images | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.images | getNextCollectionItem(page) %}
+
+{% if nextPost %}next: <a href="{{ nextPost.url }}">{{ nextPost.data.pageTitle }}</a>{% endif %}<br>
+{% if previousPost %}previous: <a href="{{ previousPost.url }}">{{ previousPost.data.pageTitle }}</a>{% endif %}<br><br>
+
 
     <div class="grid" id="grid">
     {% asyncEach im in images %}
+    
     <div class="grid-item" id="{{pageTitle | slug}}-{{loop.index + "" | slug}}">
             {% set urlbase = page.url %}
             {% set linkTarget = null %}
-            {% set autoFillCaption =  true %}
+            {% set autoFillCaption =  false %}
             {% set gridImage = im %}
             {% include "gridItem.njk" %}
     </div>
@@ -84,10 +95,6 @@ layout: base.njk
         });
         mry.layout();
         
-        let videos = [...document.querySelectorAll('.video-js')];
-         videos.forEach(video=>{
-            video.addEventListener('loadedmetadata', function(){ alert('lmd'); })
-         });
 
     </script>
     

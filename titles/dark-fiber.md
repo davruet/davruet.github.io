@@ -5,6 +5,7 @@ layout: show-masonry3.njk
 tags: ['images','shows']
 date: 2018-05-01
 pdf: 2014_2019_benedict_rueter_dark_fiber.pdf
+location: 16th Venice Biennale of Architecture, Venice, IT
 
 
 works:
@@ -14,6 +15,8 @@ works:
       Medium: Video Installation
       Dimensions: Dimensions Variable
 images:
+    -  webvid: darkfiber-hls
+       workid: 5
     -  webimg: Dark_Fiber-Venice.jpg
        workid: 5
        caption: "<i>Dark Fiber</i> (video still), 2018, The 16th Venice Architecture Biennial, Venice, IT"

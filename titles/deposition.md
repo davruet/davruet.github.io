@@ -4,6 +4,7 @@ artists: Marissa Lee Benedict, Daniel de Paula, and David Rueter
 layout: show-masonry3.njk
 tags: ['images','shows']
 pdf: 2021_Benedict Rueter de Paula_deposition.pdf
+location: 34th São Paulo Biennial, São Paulo, BR
 date: 2021-08-24
 
 works:

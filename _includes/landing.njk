@@ -40,23 +40,16 @@ layout: base.njk
 
 
 <div id="home" class="content">
+    
+    
+    <h2>selected works</h2><br>
 
-    <div class="grid" id="grid">
     {% asyncEach item in collections.images | reverse %}
     <div>
+        <a href="{{item.data.page.url | url}}"><div class="landingList">{{item.data.pageTitle}}, {{item.data.page.date.getFullYear()}}</div></a>{%if item.data.location %}&nbsp;|&nbsp;<div class="landingListLocation">{{item.data.location}}</div>{%endif%}
     </div>
-    {% asyncEach im in item.data.images %}
-         <div class="grid-item" id="{% if im.id %}{{im.id}}{% else %}{{(wt.workInfo(item.data.works,im.workid, "Name") + "-" + loop.index + "")  | striptags | slug}} {%endif%}">
-            {% set works = item.data.works %}
-            {% set urlbase = item.data.page.url %}
-            {% set linkTarget = item.data.page.url %}
-            {% set autoFillCaption =  true %}
-            {% set gridImage = im %}
-            {% include "gridItem.njk" %}
-            
-        </div>
     {% endeach %}
-    {% endeach %}
+    
     </div>
 </div>
     

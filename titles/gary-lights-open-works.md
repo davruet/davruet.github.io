@@ -12,7 +12,10 @@ works:
       Medium: Installation
       Artists: Marissa Lee Benedict and David Rueter
 images:
-    -  webimg: GLOW-Gary-court.tif
+    -  webimg: Gary-court.jpeg
+       workid: 7
+       caption: "<i>Gary Lights Open Works</i> (installation view), 2018, Gary, IN, USA"
+    -  webimg: gary-lift-exposure-corr.jpg
        workid: 7
        caption: "<i>Gary Lights Open Works</i> (installation view), 2018, Gary, IN, USA"
 

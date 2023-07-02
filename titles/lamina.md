@@ -3,6 +3,7 @@ pageTitle: lâmina
 artists: Marissa Lee Benedict and David Rueter
 layout: show-masonry3.njk
 tags: ['images','shows']
+location: um trabalho um texto, São Paulo, BR
 date: 2021-09-20
 
 works:
@@ -15,15 +16,18 @@ works:
       Artists: Marissa Lee Benedict and David Rueter
 
 images:
-    -  webimg: lamina_DSC5581.jpg
-       caption: <i>lâmina</i>, um trabalho um texto, São Paulo, BR, 2021
+    -  webvid: lamina-vid
+    -  webimg: IMG_4154.jpeg
        workid: 13
-       id: lamina
-    -  webimg: lamina-IMG_4223.jpg
-       caption: <i>lâmina</i>, um trabalho um texto, São Paulo, BR, 2021
+    -  webimg: IMG_4223.jpeg
        workid: 13
-    -  webimg: lamina-IMG_4088.jpg
-       caption: <i>lâmina</i>, um trabalho um texto, São Paulo, BR, 2021
+    -  webimg: lamina-cu.jpg
+       workid: 13
+    -  webimg: inside.jpg
+       workid: 13
+    -  webimg: IMG_4090.jpeg
+       workid: 13
+    -  webimg: IMG_4081.jpeg
        workid: 13
 
 ---
