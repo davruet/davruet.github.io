@@ -8,6 +8,11 @@ eleventyExcludeFromCollections: true
         <loc>{{ site.baseURL | url}}</loc>
         <lastmod>{{ page.date.toISOString() }}</lastmod>
     </url>
+        <url>
+        <loc>{{ site.baseURL | url}}{{"/about" | url}}</loc>
+        <lastmod>{{ page.date.toISOString() }}</lastmod>
+    </url>
+    
     {% for page in collections.all %}
         <url>
             <loc>{{ site.baseURL | url}}{{ page.url | url }}</loc>

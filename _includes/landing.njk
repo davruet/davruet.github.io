@@ -43,6 +43,8 @@ layout: base.njk
 
     <div class="grid" id="grid">
     {% asyncEach item in collections.images | reverse %}
+    <div>
+    </div>
     {% asyncEach im in item.data.images %}
          <div class="grid-item" id="{% if im.id %}{{im.id}}{% else %}{{(wt.workInfo(item.data.works,im.workid, "Name") + "-" + loop.index + "")  | striptags | slug}} {%endif%}">
             {% set works = item.data.works %}
