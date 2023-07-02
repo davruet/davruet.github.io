@@ -5,7 +5,6 @@ img: /static/br.jpg
 alt: Documentation of works by artists Marissa Lee Benedict and David Rueter
 layout: base.njk
 ---
-{% import "gridItem.njk" as gi %}
 {% import "workText.njk" as wt %}
 
 <link rel="stylesheet" href="https://vjs.zencdn.net/8.0.4/video-js.css">
@@ -49,12 +48,16 @@ layout: base.njk
     </div>
 
     <div class="grid" id="grid">
-    {% for im in images %}
+    {% asyncEach im in images %}
     <div class="grid-item" id="{{pageTitle | slug}}-{{loop.index + "" | slug}}">
-        {{ gi.gridItem(im, works, page.url, null, autoFillCaptions) | safe}}
+            {% set urlbase = page.url %}
+            {% set linkTarget = null %}
+            {% set autoFillCaption =  true %}
+            {% set gridImage = im %}
+            {% include "gridItem.njk" %}
     </div>
     
-    {% endfor %}
+    {% endeach %}
     </div>
     </div>
     

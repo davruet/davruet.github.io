@@ -1,11 +1,12 @@
-{% macro gridItem(im, works, urlbase, linkTarget, autoFillCaption)%}
+
+<!--im, works, urlbase, linkTarget, autoFillCaption)%}-->
 {% import "workText.njk" as wc %}   
-{% if "webimg" in im %}
-{% set alt = works | workInfo(im.workid, "Artists") + ", " + works | workCaption(im.workid, false) | striptags %}
+{% if "webimg" in gridImage %}
+{% set alt = works | workInfo(gridImage.workid, "Artists") + ", " + works | workCaption(gridImage.workid, false) | striptags %}
 <div vocab="https://schema.org/" typeof="ImageObject">
     <span property="name" content="{{alt | striptags}}"></span>
     {% if (linkTarget != null)%} <a href="{{linkTarget}}"> {% endif %}
-    {% image "." + urlbase + im["webimg"], alt, "100vw"%}
+    {% image "." + urlbase + gridImage["webimg"], alt, "100vw"%}
     {% if (linkTarget != null)%}</a>{% endif %}
     <span rel="schema:creator">
         <span typeof="schema:Person"></span>
@@ -17,19 +18,18 @@
     <span property="creditText" content="David Rueter"></span>
     <span property="acquireLicensePage" content="https://davidrueter.com/about/"></span>
 </div>
-{% elif "webvid" in im %}
+{% elif "webvid" in gridImage %}
 
 <video-js class="vjs-big-play-centered" data-setup='{"fluid": true, "controls": true}'>
-    <source src="{{urlbase}}{{im["webvid"] | videoURL}}" type="application/x-mpegURL">
+    <source src="{{urlbase}}{{gridImage["webvid"] | videoURL}}" type="application/x-mpegURL">
 </video-js>
 {% endif %}
 <div class="grid-item-caption">
-{% if ("caption" in im) or not autoFillCaption %}
+{% if ("caption" in gridImage) or not autoFillCaption %}
 <div class="workCaption">
-{{ im.caption | safe }}
+{{ gridImage.caption | safe }}
 </div>
 {% else %}
-{{ wc.workCaption(works,im.workid,true) | safe}}
+{{ wc.workCaption(works,gridImage.workid,true) | safe}}
 {% endif %} 
 </div>
-{% endmacro %}

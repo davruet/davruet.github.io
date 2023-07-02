@@ -6,7 +6,6 @@ alt: Documentation of works by artist David Rueter
 layout: base.njk
 ---
 
-{% import "gridItem.njk" as gi %}
 {% import "workText.njk" as wt %}
 
 <style>    
@@ -43,13 +42,19 @@ layout: base.njk
 <div id="home" class="content">
 
     <div class="grid" id="grid">
-    {% for item in collections.images | reverse %}
-    {% for im in item.data.images %}
+    {% asyncEach item in collections.images | reverse %}
+    {% asyncEach im in item.data.images %}
          <div class="grid-item" id="{% if im.id %}{{im.id}}{% else %}{{(wt.workInfo(item.data.works,im.workid, "Name") + "-" + loop.index + "")  | striptags | slug}} {%endif%}">
-            {{ gi.gridItem(im, item.data.works, item.data.page.url, item.data.page.url, true) | safe}}
+            {% set works = item.data.works %}
+            {% set urlbase = item.data.page.url %}
+            {% set linkTarget = item.data.page.url %}
+            {% set autoFillCaption =  true %}
+            {% set gridImage = im %}
+            {% include "gridItem.njk" %}
+            
         </div>
-    {% endfor %}
-    {% endfor %}
+    {% endeach %}
+    {% endeach %}
     </div>
 </div>
     
@@ -71,7 +76,6 @@ layout: base.njk
         
         imagesLoaded(document.querySelector('.grid')).on('progress', ()=>{
             mry.layout();
-            console.log("layout!");
         });
         mry.layout();
     </script>

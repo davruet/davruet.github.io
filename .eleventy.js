@@ -75,7 +75,7 @@ async function imagePoster(src, sizes = "100vw"){
 
 
 
-function imageShortcode(src, alt, sizes = "100vw") {
+async function imageShortcode(src, alt, sizes = "100vw") {
   if(alt === undefined) {
     // You bet we throw an error on missing alt (alt="" works okay)
     throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
@@ -84,7 +84,7 @@ function imageShortcode(src, alt, sizes = "100vw") {
     throw new Error(`Missing \`src\` on responsiveimage.`);
   }
 
-  let metadata = Image.statsSync(src, {
+  let metadata = await Image(src, {
     widths: [600, 1200, 1920, 3000],
     formats: ['jpeg'],
     outputDir: "./_site/img/"
@@ -180,7 +180,7 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addFilter("workInfo", workInfo);
     eleventyConfig.addFilter("workCaption", workCaption);
 
-    eleventyConfig.addNunjucksShortcode("image", imageShortcode);
+    eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
     eleventyConfig.addNunjucksAsyncShortcode("imagePoster", imagePoster);
 
     eleventyConfig.addNunjucksAsyncShortcode("imagelg", imageLightgalleryShortcode);
