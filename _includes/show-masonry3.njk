@@ -90,7 +90,7 @@ layout: base.njk
         });
 
         
-        imagesLoaded(document.querySelector('.grid')).on('progress', ()=>{
+        imagesLoaded(document.querySelector('.grid'), ()=>{
             mry.layout();
         });
         mry.layout();
