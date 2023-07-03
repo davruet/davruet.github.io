@@ -39,9 +39,10 @@ layout: base.njk
 <link rel="stylesheet" href="https://vjs.zencdn.net/8.0.4/video-js.css">
 
 
-<div id="home" class="content">
+<div id="home" class="content textblock">
     
-    
+    {% image "./"  + "titles/a-conversation-between-machines/_DSC5667-2.jpg", "", "100%"%} <br>
+
     <h2>selected works</h2><br>
 
     {% asyncEach item in collections.images | reverse %}
