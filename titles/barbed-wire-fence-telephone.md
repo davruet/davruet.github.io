@@ -9,6 +9,7 @@ works:
       Name: Barbed Wire Fence Telephone
       Year: 2014
       Artists: Phil Peters and David Rueter
+      Medium: Wood, barbed wire, telephones, batteries, electrical wire
       
 images:
     -  webimg: barbed-wire-fence-telephone.jpg

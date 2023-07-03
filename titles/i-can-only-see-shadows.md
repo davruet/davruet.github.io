@@ -10,7 +10,7 @@ works:
    6:
       Name: I Can Only See Shadows
       Year: 2016
-      Medium: Installation
+      Medium: Three-channel video
       Artists: Marissa Lee Benedict and David Rueter
 
 images:

@@ -216,6 +216,7 @@ video {
 
 .showTitle, .showLocation, .showDate, .showArtists, .carouselText {
   font-family: 'Acumin Pro';
+  max-width: 800px;
 }
 
 

@@ -39,11 +39,11 @@ layout: base.njk
 </style>
     <div id="home" class="content">
     <div class="showInfo">
-        <div class="showTitle"><i>{{pageTitle}}</i></div>
-        <div class="showLocation">{{page.date.getFullYear()}}</div>
-        {%if location %}
-        <div class="showLocation">{{location}}</div> 
-        {%endif%}
+        <div class="showTitle"><i>{{pageTitle}}</i>, {{page.date.getFullYear()}}</div><br>
+        <div class="showLocation"></div>
+        {%if valueArray(works).length == 1%}<div class="showArtists">{{valueArray(works)[0].Medium}}</div><br>{%endif%}
+
+        {%if location %}<div class="showLocation">{{location}}</div>{%endif%}
         <div class="showArtists">{{artists}}</div>
         {% if pdf %}
         <div class="showArtists"><a href="{{pdf}}" target="_blank" >PDF documentation</a></div>
@@ -53,8 +53,8 @@ layout: base.njk
     {% set previousPost = collections.images | getPreviousCollectionItem(page) %}
 {% set nextPost = collections.images | getNextCollectionItem(page) %}
 
-{% if nextPost %}next: <a href="{{ nextPost.url }}">{{ nextPost.data.pageTitle }}</a>{% endif %}<br>
-{% if previousPost %}previous: <a href="{{ previousPost.url }}">{{ previousPost.data.pageTitle }}</a>{% endif %}<br><br>
+{% if previousPost %}previous: <a href="{{ previousPost.url }}">{{ previousPost.data.pageTitle }}</a>{% endif %}<br>
+{% if nextPost %}next: <a href="{{ nextPost.url }}">{{ nextPost.data.pageTitle }}</a>{% endif %}<br><br>
 
 
     <div class="grid" id="grid">

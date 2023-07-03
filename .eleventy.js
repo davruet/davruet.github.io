@@ -136,6 +136,10 @@ function workInfo(dict, workid, arg){
 
 }
 
+function valueArray(obj){
+  return Object.values(obj)
+}
+
 function workCaption(works, workid, short=true, prefix=""){
     assert(works, "No works argument specified.")
 
@@ -194,6 +198,8 @@ module.exports = (eleventyConfig) => {
 
     eleventyConfig.addLiquidShortcode("image", imageShortcode);
     eleventyConfig.addJavaScriptFunction("image", imageShortcode);
+    eleventyConfig.addNunjucksGlobal("valueArray", valueArray);
+
 
     eleventyConfig.addFilter("showDate", dateObj => {
       return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("L/yyyy");

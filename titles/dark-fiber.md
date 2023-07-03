@@ -12,7 +12,7 @@ works:
    5:
       Name: Dark Fiber, 2015-2018
       Year: 2015-2018
-      Medium: Video Installation
+      Medium: Site-adapted single-channel video installation
       Dimensions: Dimensions Variable
 images:
     -  webvid: darkfiber-hls

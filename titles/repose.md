@@ -13,6 +13,7 @@ works:
       Year: 2020
       Artists:  Marissa Lee Benedict, Daniel de Paula, and David Rueter
       Dimensions: Dimensions Variable
+      Medium: Wood, steel, insulation foam
 
 images:
     -  webvid: repose-hls
