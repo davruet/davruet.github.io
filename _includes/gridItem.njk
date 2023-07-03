@@ -4,10 +4,9 @@
 {% if "webimg" in gridImage %}
 {% set alt = works | workInfo(gridImage.workid, "Artists") + ", " + works | workCaption(gridImage.workid, false) | striptags %}
 <div vocab="https://schema.org/" typeof="ImageObject">
-    <span property="name" content="{{alt | striptags}}"></span>
     {% if (linkTarget != null)%} <a href="{{linkTarget}}"> {% endif %}
+    <span property="name" content="{{alt | striptags}}"></span>
     {% image "." + urlbase + gridImage["webimg"], alt, "100vw"%}
-    {% if (linkTarget != null)%}</a>{% endif %}
     <span rel="schema:creator">
         <span typeof="schema:Person"></span>
         <span property="schema:name" content="David Rueter"></span>
@@ -17,6 +16,8 @@
     <span property="license" content="https://davidrueter.com/about/"></span>
     <span property="creditText" content="David Rueter"></span>
     <span property="acquireLicensePage" content="https://davidrueter.com/about/"></span>
+    {% if (linkTarget != null)%}</a>{% endif %}
+    
 </div>
 {% elif "webvid" in gridImage %}
 
