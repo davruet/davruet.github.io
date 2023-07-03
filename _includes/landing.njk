@@ -41,7 +41,20 @@ layout: base.njk
 
 <div id="home" class="content textblock">
     
-    {% image "./"  + "titles/a-conversation-between-machines/_DSC5667-2.jpg", "", "100%"%} <br>
+    <div vocab="https://schema.org/" typeof="ImageObject">
+    <span property="name" content="Marissa Lee Benedict and David Rueter: a conversation between machines about Mallarmé, 2023"></span>
+
+    {% image "./"  + "titles/a-conversation-between-machines/_DSC5667-2.jpg", "Marissa Lee Benedict and David Rueter: a conversation between machines about Mallarmé, 2023", "100%"%} <br>
+     <span rel="schema:creator">
+        <span typeof="schema:Person"></span>
+        <span property="schema:name" content="David Rueter"></span>
+        <span property="schema:disambiguatingDescription" content="Artist"></span>
+    </span>
+    <span property="copyrightNotice" content="David Rueter"></span>
+    <span property="license" content="https://davidrueter.com/about/"></span>
+    <span property="creditText" content="David Rueter"></span>
+    <span property="acquireLicensePage" content="https://davidrueter.com/about/"></span>
+    </div>
 
     <h2>selected works</h2><br>
 
