@@ -75,7 +75,7 @@ async function imagePoster(src, sizes = "100vw"){
 
 
 
-async function imageShortcode(src, alt, sizes = "100vw") {
+async function imageShortcode(src, page, alt, sizes = "100vw") {
   if(alt === undefined) {
     // You bet we throw an error on missing alt (alt="" works okay)
     throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
@@ -84,12 +84,22 @@ async function imageShortcode(src, alt, sizes = "100vw") {
     throw new Error(`Missing \`src\` on responsiveimage.`);
   }
 
+  let relPath = `/img/${page}`
+  let dir = `./_site/${relPath}`;
+  
   let metadata = await Image(src, {
     widths: [600, 1200, 1920, 3000],
     formats: ['jpeg'],
-    outputDir: "./_site/img/"
+    outputDir: dir,
+    urlPath: relPath,
+    filenameFormat: function (id, src, width, format, options) {
+      const extension = Path.extname(src);
+      const name = Path.basename(src, extension);
+  
+      return `${name}-${width}w.${format}`;
+    }
+    
   });
-
   let lowsrc = metadata.jpeg[0];
   
   let html = `<img 

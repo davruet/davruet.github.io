@@ -5,7 +5,7 @@
 <div vocab="https://schema.org/" typeof="ImageObject">
     {% if (linkTarget != null)%} <a href="{{linkTarget}}"> {% endif %}
     <span property="name" content="{{alt | striptags}}"></span>
-    {% image "." + urlbase + gridImage["webimg"], alt, "100vw"%}
+    {% image "." + urlbase + gridImage["webimg"], page.url, alt, "100vw"%}
     <span rel="schema:creator">
         <span typeof="schema:Person">
             <span property="schema:name" content="David Rueter"></span>
