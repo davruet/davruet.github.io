@@ -1,8 +1,7 @@
 
 <!--im, works, urlbase, linkTarget, autoFillCaption)%}-->
-{% import "workText.njk" as wc %}   
 {% if "webimg" in gridImage %}
-{% set alt = works | workInfo(gridImage.workid, "Artists") + ", " + works | workCaption(gridImage.workid, false) | striptags %}
+{% set alt = works | workInfo(gridImage.workid, "Artists") + ", " + workCaption(works, gridImage.workid, false, false) %}
 <div vocab="https://schema.org/" typeof="ImageObject">
     {% if (linkTarget != null)%} <a href="{{linkTarget}}"> {% endif %}
     <span property="name" content="{{alt | striptags}}"></span>
@@ -32,6 +31,6 @@
 {{ gridImage.caption | safe }}
 </div>
 {% else %}
-{{ wc.workCaption(works,gridImage.workid,true) | safe}}
+{{ workCaption(works,gridImage.workid,true, true) | safe}}
 {% endif %} 
 </div>

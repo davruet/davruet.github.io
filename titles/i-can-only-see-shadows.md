@@ -15,6 +15,7 @@ works:
 
 images:
     -  webvid: icoss-excerpt-hls
+       workid: 6
     -  webimg: Petcoke-Installation-16.jpg
        caption: 'Installation view'
        workid: 6

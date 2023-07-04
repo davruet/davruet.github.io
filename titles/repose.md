@@ -17,6 +17,7 @@ works:
 
 images:
     -  webvid: repose-hls
+       workid: 10
     -  webimg: repose_DSC4337.jpg
        workid: 10
        caption: "<i>Repose</i>, 2020, Arts Club of Chicago, USA"

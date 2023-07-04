@@ -7,7 +7,6 @@ location: um trabalho um texto, São Paulo, BR
 date: 2021-09-20
 
 works:
-  
    13:
       Name: lâmina
       Year: 2021
@@ -17,6 +16,7 @@ works:
 
 images:
     -  webvid: lamina-vid
+       workid: 13
     -  webimg: IMG_4154.jpeg
        workid: 13
     -  webimg: IMG_4223.jpeg

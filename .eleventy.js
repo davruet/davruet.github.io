@@ -131,7 +131,7 @@ function workInfo(dict, workid, arg){
         //if (dict && dict.has(workid) && arg in dict.get(workid)){
           return dict[workid][arg];
       } else {
-        return "undefined";
+        return undefined;
       }
 
 }
@@ -140,16 +140,42 @@ function valueArray(obj){
   return Object.values(obj)
 }
 
-function workCaption(works, workid, short=true, prefix=""){
-    assert(works, "No works argument specified.")
+function workTitle(works, workid, html){
+  assert(works, "No works argument specified for workid " + workid)
+  var strings = [
+    workInfo (works, workid, "Name"),
+    workInfo (works, workid, "Year")]
+    if (!html){
+      return strings.join(", ");
+    } else {
+      strings[0] = `<div class="workTitle workCaptionItem"><i>${strings[1]}</i></div>`
+      strings[1] = `div class="workCaptionItem">${strings[i]}</div>`
+      return `<div class="workCaption">${strings.join(", ")}</div>`;
+    }
+    
+}
 
-      return `<div class="workCaption">
-      ${prefix}
-      <div class="workTitle workCaptionItem"><i>${workInfo (works, workid, "Name")}</i></div>,
-      <div class="workCaptionItem">${workInfo (works, workid, "Year")}</div>,
-      <div class="workCaptionItem">${workInfo (works, workid, "Medium")}</div>,
-      <div class="workCaptionItem">${workInfo (works, workid, "Size")}</div>
-      </div>`
+function workCaption(works, workid, short, html){
+    assert(works, "No works argument specified for workid " + workid)
+
+    var strings = [
+       workInfo (works, workid, "Name"),
+       workInfo (works, workid, "Year"),
+       workInfo (works, workid, "Medium"),
+       workInfo (works, workid, "Size")]
+    if (!short){
+      strings.unshift(workInfo (works, workid, "Artists"));
+    }
+    strings = strings.filter(s=>s);
+    if (!html){
+      return strings.join(", ");
+    } else {
+      strings[1] = `<div class="workTitle workCaptionItem"><i>${strings[1]}</i></div>`
+      for (var i = 2; i <= 4; i++){
+        strings[i] = `div class="workCaptionItem">${strings[i]}</div>`
+      }
+      return `<div class="workCaption">${strings.join(", ")}</div>`;
+    }
 }
 
 function videoURL(videoName){
@@ -186,19 +212,22 @@ module.exports = (eleventyConfig) => {
 
 
     eleventyConfig.addFilter("workInfo", workInfo);
-    eleventyConfig.addFilter("workCaption", workCaption);
+    //eleventyConfig.addFilter("workCaption", workCaption);
 
     eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
     eleventyConfig.addNunjucksAsyncShortcode("imagePoster", imagePoster);
 
     eleventyConfig.addNunjucksAsyncShortcode("imagelg", imageLightgalleryShortcode);
     eleventyConfig.addShortcode("basename", Path.basename )
-    eleventyConfig.addShortcode("workCaption", workCaption )
+    //eleventyConfig.addShortcode("workCaption", workCaption )
     eleventyConfig.addFilter("videoURL", videoURL )
 
     eleventyConfig.addLiquidShortcode("image", imageShortcode);
     eleventyConfig.addJavaScriptFunction("image", imageShortcode);
     eleventyConfig.addNunjucksGlobal("valueArray", valueArray);
+    eleventyConfig.addNunjucksGlobal("workCaption", workCaption);
+    eleventyConfig.addNunjucksGlobal("workTitle", workTitle);
+
 
 
     eleventyConfig.addFilter("showDate", dateObj => {

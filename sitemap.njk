@@ -3,7 +3,9 @@ permalink: /sitemap.xml
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
     <url>
         <loc>{{ site.baseURL | url}}</loc>
         <lastmod>{{ page.date.toISOString() }}</lastmod>
@@ -11,12 +13,23 @@ eleventyExcludeFromCollections: true
         <url>
         <loc>{{ site.baseURL | url}}{{"/about" | url}}</loc>
         <lastmod>{{ page.date.toISOString() }}</lastmod>
-    </url>
-    
+    </url>    
     {% for page in collections.all %}
         <url>
             <loc>{{ site.baseURL | url}}{{ page.url | url }}</loc>
             <lastmod>{{ page.date.toISOString() }}</lastmod>
+             {% for im in page.data.images %}
+                {% if "webvid" in im %}
+                <video:video>
+                    {% set vidBase = site.baseURL + page.url + im.webvid  %}
+                    <video:thumbnail_loc>{{ vidBase + "/poster.jpg"| url}}</video:thumbnail_loc>
+                    <video:title>{{workTitle(page.data.works, im.workid, false)}}</video:title>
+                    <video:description>{{workCaption (page.data.works, im.workid, false, false) }}</video:description>
+                    <video:content_loc>{{vidBase + "/master.m3u8" | url}}</video:content_loc>	
+                </video:video>
+                {% endif %}
+            {% endfor %}
         </url>
+        
     {% endfor %}
 </urlset>

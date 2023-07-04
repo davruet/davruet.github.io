@@ -1,16 +1,3 @@
 {% macro workInfo(works, workid, arg) %}
 {{works[workid][arg]}}
 {% endmacro %}
-
-{# FIXME - add prefix #}
-{% macro workCaption(works, workid, short=true)%}
-<div class="workCaption">
-    <div class="workTitle workCaptionItem">{{workInfo (works, workid, "Name")}}</div>,
-    <div class="workCaptionItem">{{workInfo (works, workid, "Year")}}</div>
-    {% if not short %}
-    . <div class="workCaptionItem">{{workInfo (works, workid, "Medium")}}</div>
-    <div class="workCaptionItem">{{workInfo (works, workid, "Dimensions")}}</div>
-    {% endif %}
-</div>
-
-{% endmacro %}

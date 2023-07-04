@@ -16,6 +16,7 @@ works:
       Artists: Marissa Lee Benedict and David Rueter
 images:
     -  webvid: dwp-vid
+       workid: 9
     -  webimg: _DSC4024-2.tif.jpg
        caption: "Installation detail - exterior, Van Eyck Academie, Maastricht, NL"
        workid: 9

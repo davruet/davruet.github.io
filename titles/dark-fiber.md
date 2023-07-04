@@ -10,10 +10,11 @@ location: 16th Venice Biennale of Architecture, Venice, IT
 
 works:
    5:
-      Name: Dark Fiber, 2015-2018
+      Name: Dark Fiber
       Year: 2015-2018
       Medium: Site-adapted single-channel video installation
       Dimensions: Dimensions Variable
+      Artists: Marissa Lee Benedict and David Rueter
 images:
     -  webvid: darkfiber-hls
        workid: 5
