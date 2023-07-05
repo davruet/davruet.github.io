@@ -96,7 +96,7 @@ async function imageShortcode(src, page, alt, sizes = "100vw") {
       const extension = Path.extname(src);
       const name = Path.basename(src, extension);
   
-      return `${name}-${width}w.${format}`;
+      return `${encodeURIComponent(name)}-${width}w.${format}`;
     }
     
   });
