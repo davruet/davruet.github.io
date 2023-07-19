@@ -73,9 +73,14 @@ async function imagePoster(src, sizes = "100vw"){
   }
 }
 
+function filenameFormat (id, src, width, format, options) {
+  const extension = Path.extname(src);
+  const name = Path.basename(src, extension);
 
+  return `${encodeURIComponent(name)}-${width}w.${format}`;
+}
 
-async function imageShortcode(src, page, alt, sizes = "100vw") {
+async function imageShortcode(src, baseURL, page, alt, sizes = "100vw") {
   if(alt === undefined) {
     // You bet we throw an error on missing alt (alt="" works okay)
     throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
@@ -87,21 +92,28 @@ async function imageShortcode(src, page, alt, sizes = "100vw") {
   let relPath = `/img/${page}`
   let dir = `./_site/${relPath}`;
   
+    
   let metadata = await Image(src, {
     widths: [600, 1200, 1920, 3000],
     formats: ['jpeg'],
     outputDir: dir,
     urlPath: relPath,
-    filenameFormat: function (id, src, width, format, options) {
-      const extension = Path.extname(src);
-      const name = Path.basename(src, extension);
-  
-      return `${encodeURIComponent(name)}-${width}w.${format}`;
+    filenameFormat: filenameFormat,
+    urlFormat: function ({
+      hash, // not included for `statsOnly` images
+      src,
+      width,
+      format,
+    }) {
+      let base = new URL(relPath, baseURL);
+      let uRel = new URL(relPath, base);
+      let u2 = new URL(filenameFormat("",src,width,format,{}), uRel )
+      return `//${u2.host}${u2.pathname}`;
     }
-    
   });
   let lowsrc = metadata.jpeg[0];
   
+
   let html = `<img 
         alt="${alt}"
         srcset="${metadata.jpeg.map(entry => entry.srcset).join(", ")}"
@@ -196,7 +208,7 @@ function videoURL(videoName){
 module.exports = (eleventyConfig) => {
 
     if (process.env.ELEVENTY_URL) {
-      site.baseURL = process.env.ELEVENTY_URL;
+      baseURL = process.env.ELEVENTY_URL;
     }
 
     eleventyConfig.addPlugin(metagen);
