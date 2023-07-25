@@ -213,6 +213,7 @@ module.exports = (eleventyConfig) => {
     //eleventyConfig.addPassthroughCopy({"projects/**/*.mp4": "v"})
     //eleventyConfig.addPassthroughCopy({"shows/**/*.mp4": "v"})
     eleventyConfig.addPassthroughCopy("titles/**/*.m3u8")
+    eleventyConfig.addPassthroughCopy("titles/**/poster.jpg")
     eleventyConfig.addPassthroughCopy("titles/**/*.ts")
     eleventyConfig.addPassthroughCopy("shows/**/*.m3u8")
     eleventyConfig.addPassthroughCopy("shows/**/*.ts")
