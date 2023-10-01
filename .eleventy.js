@@ -174,7 +174,8 @@ function workCaption(works, workid, short, html){
        workInfo (works, workid, "Name"),
        workInfo (works, workid, "Year"),
        workInfo (works, workid, "Medium"),
-       workInfo (works, workid, "Size")]
+       workInfo (works, workid, "Size"),
+       workInfo (works, workid, "Description")]
     if (!short){
       strings.unshift(workInfo (works, workid, "Artists"));
     }
@@ -183,7 +184,7 @@ function workCaption(works, workid, short, html){
       return strings.join(", ");
     } else {
       strings[1] = `<div class="workTitle workCaptionItem"><i>${strings[1]}</i></div>`
-      for (var i = 2; i <= 4; i++){
+      for (var i = 2; i <= 5; i++){
         strings[i] = `div class="workCaptionItem">${strings[i]}</div>`
       }
       return `<div class="workCaption">${strings.join(", ")}</div>`;
@@ -198,7 +199,7 @@ function videoURL(videoName){
 module.exports = (eleventyConfig) => {
 
     if (process.env.ELEVENTY_URL) {
-      baseURL = process.env.ELEVENTY_URL;
+      eleventyConfig.baseURL = process.env.ELEVENTY_URL;
     }
 
     eleventyConfig.addPlugin(metagen);

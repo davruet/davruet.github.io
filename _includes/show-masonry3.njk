@@ -41,7 +41,11 @@ layout: base.njk
     <div class="showInfo">
         <div class="showTitle"><i>{{pageTitle}}</i>, {{page.date.getFullYear()}}</div><br>
         <div class="showLocation"></div>
-        {%if valueArray(works).length == 1%}<div class="showArtists">{{valueArray(works)[0].Medium}}</div><br>{%endif%}
+        {%if valueArray(works).length == 1%}
+        <div class="showArtists">{{valueArray(works)[0].Medium}}</div><br>
+        {%if valueArray(works)[0].Description%}<div class="showArtists">{{valueArray(works)[0].Description}}</div><br>{%endif%}
+        {%endif%}
+        
 
         {%if location %}<div class="showLocation">{{location}}</div>{%endif%}
         <div class="showArtists">{{artists}}</div>
@@ -92,6 +96,13 @@ layout: base.njk
         
         imagesLoaded(document.querySelector('.grid'), ()=>{
             mry.layout();
+            console.log("layout!");
+        });
+        
+        var griditems = document.querySelectorAll('.grid-item');
+        imagesLoaded(griditems, ()=>{
+            mry.layout();
+            console.log("LAYOUT-ITEM");
         });
         mry.layout();
         
