@@ -38,3 +38,5 @@ images:
        caption: "<i>Repose</i> (still image from work process documentation), 2020, Arts Club of Chicago, USA"
        
 ---
+
+<a href="http://repose.s3-website-us-east-1.amazonaws.com" target="_blank">Repose screensaver (as installed at the Arts Club of Chicago)</a>

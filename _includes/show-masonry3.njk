@@ -52,7 +52,13 @@ layout: base.njk
         {% if pdf %}
         <div class="showArtists"><a href="{{pdf}}" target="_blank" >PDF documentation</a></div>
         {% endif %}
+        <br>
+        <div class="showArtists">
+            {{content | safe}}
+        </div>
     </div>
+    
+    
     
     {% set previousPost = collections.images | getPreviousCollectionItem(page) %}
 {% set nextPost = collections.images | getNextCollectionItem(page) %}
@@ -94,15 +100,13 @@ layout: base.njk
         });
 
         
-        imagesLoaded(document.querySelector('.grid'), ()=>{
+        imagesLoaded(document.querySelectorAll('.grid'), ()=>{
             mry.layout();
-            console.log("layout!");
         });
         
         var griditems = document.querySelectorAll('.grid-item');
         imagesLoaded(griditems, ()=>{
             mry.layout();
-            console.log("LAYOUT-ITEM");
         });
         mry.layout();
         
