@@ -53,9 +53,6 @@ layout: base.njk
         <div class="showArtists"><a href="{{pdf}}" target="_blank" >PDF documentation</a></div>
         {% endif %}
         <br>
-        <div class="showArtists">
-            {{content | safe}}
-        </div>
     </div>
     
     
@@ -79,6 +76,11 @@ layout: base.njk
     </div>
     
     {% endeach %}
+     <div class="grid-item">
+                 <div class="showArtists">
+                {{content | safe}}
+                </div>
+        </div>
     </div>
     </div>
     
