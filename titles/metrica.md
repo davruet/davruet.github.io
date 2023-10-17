@@ -21,12 +21,14 @@ land reform (1991-1997).'
 images:
     -  webvid: metrika-vid
        caption: Video documentation of installation. 
+    -  webimg: overview.jpg
+       caption: 'Installation documentation'
     -  webimg: receipt1.jpg
-       caption: 'Detail view of receeipt'
+       caption: 'Detail view of receipts'
     -  webimg: receipt2.jpg
-       caption: 'Detail view of receeipt'
+       caption: 'Detail view of receipts'
     -  webimg: receipt3.jpg
-       caption: 'Detail view of receeipt'
+       caption: 'Detail view of receipts'
     -  webimg: install1.jpg
        caption: 'Detail view of installation'
     -  webimg: install2.jpg
