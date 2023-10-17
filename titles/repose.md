@@ -18,16 +18,19 @@ works:
 images:
     -  webvid: repose-hls
        workid: 10
-    -  webimg: repose_DSC4337.jpg
+    -  webimg: repose_DSC4441.jpg
        workid: 10
        caption: "<i>Repose</i>, 2020, Arts Club of Chicago, USA"
     -  webimg: repose-screensaver1.png
        workid: 10
        caption: "<i>Repose</i> (still image of screensaver on gallery computer), 2020, Arts Club of Chicago, USA"
-    -  webimg: repose_DSC4381.jpg
+    -  webimg: repose_DSC4520.jpg
        workid: 10
        caption: "<i>Repose</i> (installation detail), 2020, Arts Club of Chicago, USA"
-    -  webimg: repose_DSC4394.jpg
+    -  webimg: repose_DSC4590.jpg
+       workid: 10
+       caption: "<i>Repose</i> (installation detail), 2020, Arts Club of Chicago, USA"
+    -  webimg: repose_DSC4619.jpg
        workid: 10
        caption: "<i>Repose</i> (installation detail), 2020, Arts Club of Chicago, USA"
     -  webimg: repose-animation.jpg
