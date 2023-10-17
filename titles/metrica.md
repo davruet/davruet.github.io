@@ -20,6 +20,19 @@ land reform (1991-1997).'
       Artists: 'Marissa Lee Benedict and David Rueter'
 images:
     -  webvid: metrika-vid
-       workid: 32
        caption: Video documentation of installation. 
+    -  webimg: receipt1.jpg
+       caption: 'Detail view of receeipt'
+    -  webimg: receipt2.jpg
+       caption: 'Detail view of receeipt'
+    -  webimg: receipt3.jpg
+       caption: 'Detail view of receeipt'
+    -  webimg: install1.jpg
+       caption: 'Detail view of installation'
+    -  webimg: install2.jpg
+       caption: 'Detail view of installation'
+    -  webimg: install3.jpg
+       caption: 'Detail view of installation'
+    -  webimg: cellar_vault.jpg
+       caption: 'Detail view of installation'
 ---
