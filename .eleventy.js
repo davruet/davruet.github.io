@@ -73,20 +73,14 @@ async function imagePoster(src, sizes = "100vw"){
   }
 }
 
-
-
-async function imageShortcode(src, baseURL, page, alt, sizes = "100vw") {
-  if(alt === undefined) {
-    // You bet we throw an error on missing alt (alt="" works okay)
-    throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
-  }
+async function imageMetadata(src, page) {
   if (src == undefined) {
     throw new Error(`Missing \`src\` on responsiveimage.`);
   }
-
+  
   let relPath = `/img/${page}`
   let dir = `./_site/${relPath}`;
-    
+  
   let metadata = await Image(src, {
     widths: [600, 1200, 1920, 3000],
     formats: ['jpeg'],
@@ -100,8 +94,35 @@ async function imageShortcode(src, baseURL, page, alt, sizes = "100vw") {
     }
     
   });
-  let lowsrc = metadata.jpeg[0];
+  return metadata;
+}
+
+async function imageLargeURL(src, baseURL, page){
+  metadata = await imageMetadata(src, page)
+  let relPath = `/img/${page}`
+
+  let url = new URL(relPath, baseURL);
+  let base = `//${url.host}/`
+  let hisrc = metadata.jpeg[metadata.jpeg.length -1];
   
+  return `${baseURL}${hisrc.url}`
+}
+
+
+
+async function imageShortcode(src, baseURL, page, alt, sizes = "100vw") {
+  if(alt === undefined) {
+    // You bet we throw an error on missing alt (alt="" works okay)
+    throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
+  }
+  if (src == undefined) {
+    throw new Error(`Missing \`src\` on responsiveimage.`);
+  }
+
+  metadata = await imageMetadata(src, page)
+  let lowsrc = metadata.jpeg[0];
+  let relPath = `/img/${page}`
+
   let url = new URL(relPath, baseURL);
   let base = `//${url.host}/`
   let html = `<img 
@@ -229,6 +250,8 @@ module.exports = (eleventyConfig) => {
     //eleventyConfig.addFilter("workCaption", workCaption);
 
     eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+    eleventyConfig.addNunjucksAsyncShortcode("imageLargeURL", imageLargeURL);
+
     eleventyConfig.addNunjucksAsyncShortcode("imagePoster", imagePoster);
 
     eleventyConfig.addNunjucksAsyncShortcode("imagelg", imageLightgalleryShortcode);

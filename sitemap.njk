@@ -5,7 +5,10 @@ eleventyExcludeFromCollections: true
 <?xml version="1.0" encoding="utf-8"?>
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>{{ site.baseURL | url}}</loc>
         <lastmod>{{ page.date.toISOString() }}</lastmod>
@@ -27,6 +30,12 @@ eleventyExcludeFromCollections: true
                     <video:description>{{workCaption (page.data.works, im.workid, false, false) }}</video:description>
                     <video:content_loc>{{vidBase + "/master.m3u8" | url}}</video:content_loc>	
                 </video:video>
+                {% else %}
+                <image:image>
+                    <image:loc>{% imageLargeURL "." + page.url + im["webimg"], site.baseURL, page.url%}</image:loc>
+                    <image:title>{{workTitle(page.data.works, im.workid, false)}}</image:title>
+                    <image:caption>{{workCaption (page.data.works, im.workid, false, false) }}</image:caption>
+                </image:image>
                 {% endif %}
             {% endfor %}
         </url>
