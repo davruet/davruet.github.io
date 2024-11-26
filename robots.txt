@@ -1,6 +1,7 @@
+Sitemap: https://davidrueter.com/sitemap.xml
+
 User-Agent: *
 Allow: /
-Sitemap: https://davidrueter.com/sitemap.xml
 
 # disallow CuteStat
 User-agent: CuteStat
