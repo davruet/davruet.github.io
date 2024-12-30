@@ -1,7 +1,7 @@
 ---
 pageTitle: Dark Fiber
 artists: Marissa Lee Benedict and David Rueter
-layout: show-masonry3.njk
+layout: show-responsive.njk
 tags: ['images','shows']
 date: 2018-05-01
 pdf: 2014_2019_benedict_rueter_dark_fiber.pdf

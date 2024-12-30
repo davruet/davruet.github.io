@@ -1,7 +1,7 @@
 ---
 pageTitle: lâmina
 artists: Marissa Lee Benedict and David Rueter
-layout: show-masonry3.njk
+layout: show-responsive.njk
 tags: ['images','shows']
 location: um trabalho um texto, São Paulo, BR
 date: 2021-09-20

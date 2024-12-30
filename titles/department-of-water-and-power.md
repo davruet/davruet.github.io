@@ -1,7 +1,7 @@
 ---
 pageTitle: Department of Water and Power
 artists: Marissa Lee Benedict and David Rueter
-layout: show-masonry3.njk
+layout: show-responsive.njk
 tags: ['images','shows']
 date: 2019-03-01
 pdf: 2019_Benedict_Rueter_DWP.pdf

@@ -1,7 +1,7 @@
 ---
 pageTitle: Gary Lights Open Works
 artists: Marissa Lee Benedict and David Rueter
-layout: show-masonry3.njk
+layout: show-responsive.njk
 tags: ['images','shows']
 date: 2018-01-01
 

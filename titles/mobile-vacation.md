@@ -1,7 +1,7 @@
 ---
 pageTitle: Mobile Vacation
 artists: David Rueter
-layout: show-masonry3.njk
+layout: show-responsive.njk
 location: ACRE, Chicago, USA
 tags: ['images','shows']
 date: 2014-02-01

@@ -1,7 +1,7 @@
 ---
 pageTitle: Water Bottles
 artists: Marissa Lee Benedict and David Rueter
-layout: show-masonry3.njk
+layout: show-responsive.njk
 tags: ['images','shows']
 date: 2018-09-01
 pdf: 2020_Benedict_Rueter_untitled_condensation bottle.pdf

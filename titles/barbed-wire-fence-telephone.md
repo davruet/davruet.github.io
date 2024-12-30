@@ -1,7 +1,7 @@
 ---
 pageTitle: Barbed Wire Fence Telephone
 artists: Phil Peters and David Rueter
-layout: show-masonry3.njk
+layout: show-responsive.njk
 tags: ['images','shows']
 date: 2014-09-01
 works:

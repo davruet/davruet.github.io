@@ -1,7 +1,7 @@
 ---
 pageTitle: I Can Only See Shadows
 artists: Marissa Lee Benedict and David Rueter
-layout: show-masonry3.njk
+layout: show-responsive.njk
 tags: ['images','shows']
 date: 2016-09-01
 location: The Museum of Contemporary Photography, Chicago, USA

@@ -1,7 +1,7 @@
 ---
 pageTitle: The Kuramoto Model
 artists: David Rueter
-layout: show-masonry3.njk
+layout: show-responsive.njk
 tags: ['images','shows']
 date: 2012-06-01
 

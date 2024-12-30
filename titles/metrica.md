@@ -1,7 +1,7 @@
 ---
 pageTitle: Metrica
 artists: Marissa Lee Benedict and David Rueter
-layout: show-masonry3.njk
+layout: show-responsive.njk
 tags: ['images','shows']
 date: 2023-04-01
 pdf: metrica.pdf

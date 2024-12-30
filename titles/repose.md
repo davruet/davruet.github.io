@@ -1,7 +1,7 @@
 ---
 pageTitle: Repose
 artists: Marissa Lee Benedict, Daniel de Paula, and David Rueter
-layout: show-masonry3.njk
+layout: show-responsive.njk
 tags: ['images','shows']
 date: 2020-06-01
 pdf: 2020_Benedict_Rueter_de_Paula_Repose.pdf
