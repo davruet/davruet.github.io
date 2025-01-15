@@ -1,7 +1,7 @@
 ---
 pageTitle: Drift
 artists: David Rueter
-layout: show-masonry3.njk
+layout: show-responsive.njk
 tags: ['images','shows']
 date: 2013-05-01
 
