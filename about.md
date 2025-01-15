@@ -1,15 +1,18 @@
 ---
 layout: text.njk
-img: /static/br.jpg
+img: /static/marissa-lee-benedict-and-david-rueter.jpg
 alt: Marissa Lee Benedict and David Rueter
 
 ---
+
+<img src="/static/marissa-lee-benedict-and-david-rueter.jpg">
+<br><br>
 
 [Benedict and Rueter CV](/static/Benedict_Rueter_CV.pdf)
 
 <a href="https://benedictrueter.com" target="_blank">Benedict and Rueter</a>
 
-Born in 1978 and 1985 in the United States. Live and work between the United States and Amsterdam, Netherlands.
+David was Born in 1978, and Marissa was born in 1985, both in the United States. They live and work in Amsterdam, Netherlands.
 
 [Benedict](http://www.marissaleebenedict.com) and [Rueter](http://davidrueter.com)’s site-adapted videos, sculptures, and drawings intercept objects and processes that extend beyond one’s peripheral vision. Often working with architectural or infrastructural elements hidden in plain sight, the duo lodges materiality, voice, intimacy, and at times their own bodies, into the heart of abstract and technologically-produced spaces, where such things seem legible only as objects. Troubling contemporary vocabularies of  scale, representation, and abstraction with historical specificities, Benedict and Rueter pace into and out of exhibition sites, dragging with them fiber optic cables, misused industrial water bottle preforms, abjected modernist diagrams, and pieces of salvaged flooring. In its circulation, their work accumulates and adjusts as it encounters institutional logics, frictional proximities, hearsay, and fragments of collective imagination.
 
